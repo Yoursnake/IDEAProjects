@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest_main.iml" group="com.example.HypermediaRest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.HypermediaRest_test.iml" group="com.example.HypermediaRest" />
+    </modules>
+  </component>
+</project>
