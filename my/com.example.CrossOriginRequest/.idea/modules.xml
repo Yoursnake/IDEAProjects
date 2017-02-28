@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest_main.iml" group="com.example.CrossOriginRequest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.CrossOriginRequest_test.iml" group="com.example.CrossOriginRequest" />
+    </modules>
+  </component>
+</project>
