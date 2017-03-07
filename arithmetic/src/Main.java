@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -5,8 +6,8 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] a = {1,2,3,2};
-        boolean t = Find132Pattern.find132pattern2(a);
-        System.out.println(t);
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+        List<List<Integer>> listList = ThreeSum.threeSum(nums);
+        System.out.println(listList);
     }
 }
