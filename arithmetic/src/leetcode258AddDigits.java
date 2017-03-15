@@ -22,6 +22,23 @@ public class leetcode258AddDigits {
             newNum += temp;
             num = num/10;
         }
-        return addDigits(newNum);
+        return addDigits(newNum);     //使用递归
+
+    }
+
+    public static int addDigits2(int num) {
+        while (num/10 != 0) {
+            num = num%9;
+            if (num == 0) {
+                num = 9;
+            }
+        }
+        return num;
+    }
+
+// (x + y) % z = (x % z + y % z) % z，
+// 又因为 x % z % z = x % z，因此结果为 (num - 1) % 9 + 1
+    public static int addDigits3(int num) {
+        return (num-1)%9 + 1;
     }
 }
