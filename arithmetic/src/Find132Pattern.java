@@ -43,6 +43,7 @@ public class Find132Pattern {
         Stack<Integer> s = new Stack<Integer>();
         for (int i = nums.length - 1; i >= 0; i--) {
             if (nums[i] < third) return true;
+                // 要是栈空了就停下，或者 num[i] 小于等于栈顶元素停下，这样就能保证栈顶元素(second)一定比 third 大
             else while (!s.empty() && nums[i] > s.peek()){
                 third = s.peek(); s.pop();
             }
