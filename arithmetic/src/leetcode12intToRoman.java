@@ -1,19 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 /**
- * Created by shengliyi on 2017/3/4.
+ * Created by shengliyi on 2017/3/17.
  */
-public class Main {
-
-    static int i = 0;
-
-    public static void main(String[] args) {
-        int num = 1;
-        System.out.println(intToRoman(11));
-    }
-
+public class leetcode12intToRoman {
     public static String intToRoman(int num) {
         int count = 0; // 表示 num 的位数
         int temp = num;
@@ -57,5 +45,4 @@ public class Main {
 
         return romanNumber;
     }
-
 }
