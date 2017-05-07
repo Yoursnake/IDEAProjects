@@ -1,24 +1,22 @@
-import java.util.List;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 /**
  * Created by shengliyi on 2017/3/4.
  */
-public class Main {
-    static List<List<Integer>> res;
 
+public class Main {
 
     public static void main(String[] args) {
-
-        String a = "111";
-        String b = "000011112124";
-        System.out.println(Multiply.multiply(a, b));
+        InetAddress ip;
+        try {
+            ip = InetAddress.getLocalHost();
+            String localname = ip.getHostName();
+            String localip = ip.getHostAddress();
+            System.out.println("本机名：" + localname);
+            System.out.println("本机 ip 地址：" + localip);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
     }
-
-    public static void Change(String a, String  b) {
-        StringBuilder tempA = new StringBuilder("2");
-        StringBuilder tempB = new StringBuilder("1");
-        a = tempA.toString();
-        b = tempB.toString();
-    }
-
 }
