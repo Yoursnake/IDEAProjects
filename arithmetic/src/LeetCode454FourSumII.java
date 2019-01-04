@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Created by shengliyi on 2017/3/12.
  */
-public class leetcode454FourSumII {
+public class LeetCode454FourSumII {
 
     public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
 //        int length = A.length;

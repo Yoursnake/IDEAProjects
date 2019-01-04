@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/3/17.
  */
-public class leetcode12intToRoman {
+public class LeetCode12intToRoman {
     public static String intToRoman(int num) {
         int count = 0; // 表示 num 的位数
         int temp = num;

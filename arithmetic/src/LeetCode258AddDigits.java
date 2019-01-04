@@ -12,7 +12,7 @@ Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2.
 Since 2 has only one digit, return it.
 */
 
-public class leetcode258AddDigits {
+public class LeetCode258AddDigits {
 
     public static int addDigits(int num) {
         if (num/10 == 0) return num;    //如果num是个位数则返回num

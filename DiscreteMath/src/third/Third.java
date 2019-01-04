@@ -12,9 +12,9 @@ public class Third {
 
         int[] A;
         ArrayList<int[]> cover; // 所有的覆盖关系
-
         Scanner input = new Scanner(System.in);
 
+        // 输入元素
         System.out.print("集合 A 元素个数为：");
         String strN = input.nextLine();
         n = Integer.parseInt(strN);

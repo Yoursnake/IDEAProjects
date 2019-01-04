@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by shengliyi on 2017/3/15.
  */
-public class leetcode3LongestSubString {
+public class LeetCode3LongestSubString {
 
     public int lengthOfLongestSubstring(String s) {
         int length = s.length();

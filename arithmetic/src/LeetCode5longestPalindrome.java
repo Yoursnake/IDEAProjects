@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by shengliyi on 2017/3/18.
  */
-public class leetcode5longestPalindrome {
+public class LeetCode5longestPalindrome {
 
     static int maxLength;
     static String res;
