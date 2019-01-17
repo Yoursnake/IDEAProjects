@@ -5,7 +5,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        int a = new LeetCode28ImplementStr().strStr("a", "a");
+
+        int[] nums = {1, 3, 5, 6};
+        int target = 0;
+        int a = new LeetCode35SearchInsertPosition().searchInsert(nums, target);
         System.out.println(a);
     }
 }

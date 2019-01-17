@@ -15,6 +15,8 @@ Output: -1
 
 public class LeetCode28ImplementStr {
 
+
+    // 暴力穷举2
     public int strStr(String haystack, String needle) {
         int lenHaystack = haystack.length();
         int lenNeedle = needle.length();
