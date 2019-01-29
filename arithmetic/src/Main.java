@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.List;
 
 /**
  * Created by shengliyi on 2017/3/4.
@@ -9,13 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(2);
-        list.add(1);
-        list.add(3);
-
-
-        list.sort(Comparator.naturalOrder());
-        System.out.println(list);
+        int[] candidadtes = {2,5,2,1,2};
+        int target = 5;
+        List<List<Integer>> result = new LeetCode40CombinationSumII().combinationSum2(candidadtes, target);
+        System.out.println(result);
     }
 }
