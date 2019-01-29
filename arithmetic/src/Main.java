@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -6,9 +9,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] nums = {1, 3, 5, 6};
-        int target = 0;
-        int a = new LeetCode35SearchInsertPosition().searchInsert(nums, target);
-        System.out.println(a);
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(1);
+        list.add(3);
+
+
+        list.sort(Comparator.naturalOrder());
+        System.out.println(list);
     }
 }

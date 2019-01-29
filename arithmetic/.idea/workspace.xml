@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa20e801-cde6-480d-a46d-bd0d7a9d3b9f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LeetCode29DivideTwoIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode31NextPermutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode33SearchRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode34FindFirstLastTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LeetCode36ValidSudoku.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/LeetCode28ImplementStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/LeetCode28ImplementStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/LeetCode35SearchInsertPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/LeetCode35SearchInsertPosition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/arithmetic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode28ImplementStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode28ImplementStr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,14 +23,17 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4911147">
+    <splitter split-orientation="horizontal" split-proportion="0.4676898">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -89,15 +87,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LeetCode20ValidParentheses.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/LeetCode20ValidParentheses.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/BinarySearch.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -149,11 +138,8 @@
           <file leaf-file-name="LeetCode31NextPermutation.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LeetCode31NextPermutation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#113#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="34">
+                  <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -167,11 +153,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LeetCode35SearchInsertPosition.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LeetCode35SearchInsertPosition.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="263">
-                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+                <state relative-caret-position="612">
+                  <caret line="36" selection-start-line="36" selection-end-line="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LeetCode17PhoneNumber.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/LeetCode17PhoneNumber.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LeetCode36ValidSudoku.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/LeetCode36ValidSudoku.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -211,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FourSum.java" />
         <option value="$PROJECT_DIR$/src/leetcode454FourSumII.java" />
         <option value="$PROJECT_DIR$/src/Reserve.java" />
         <option value="$PROJECT_DIR$/src/leetcode9isPalindrome.java" />
@@ -260,8 +266,9 @@
         <option value="$PROJECT_DIR$/src/LeetCode31NextPermutation.java" />
         <option value="$PROJECT_DIR$/src/LeetCode33SearchRotatedSortedArray.java" />
         <option value="$PROJECT_DIR$/src/LeetCode34FindFirstLastTarget.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode36ValidSudoku.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -305,7 +312,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,6 +329,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -819,11 +826,15 @@
       <workItem from="1546398978760" duration="7828000" />
       <workItem from="1546653669304" duration="3770000" />
       <workItem from="1547446694884" duration="8760000" />
+      <workItem from="1547700925578" duration="1707000" />
+      <workItem from="1547786505412" duration="2207000" />
+      <workItem from="1547810929266" duration="616000" />
+      <workItem from="1548732787699" duration="635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97987000" />
+    <option name="totallyTimeSpent" value="103152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -847,9 +858,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.24965517" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.24965517" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32827586" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.23424879" />
@@ -858,7 +869,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.42482758" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.31724137" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -925,7 +936,7 @@
           <option name="timeStamp" value="142" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="146" />
+      <option name="time" value="147" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -933,13 +944,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14117">
-          <caret line="800" column="66" selection-start-line="800" selection-start-column="60" selection-end-line="800" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/net/InetAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2774">
@@ -1173,16 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode17PhoneNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode20ValidParentheses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1244,11 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode31NextPermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1273,17 +1264,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java">
+    <entry file="file://$PROJECT_DIR$/src/LeetCode17PhoneNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="255">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode36ValidSudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
