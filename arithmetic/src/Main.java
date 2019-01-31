@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -5,11 +7,8 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        String num1 = "23";
-        String num2 = "23";
-
-        String result = new LeetCode43MultiplyStrings().multiply(num1, num2);
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> result = new LeetCode46Permutations().permute(nums);
         System.out.println(result);
     }
 }
