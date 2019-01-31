@@ -26,7 +26,7 @@ import java.util.List;
 
 public class LeetCode40CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Arrays.sort(candidates);
+        Arrays.sort(candidates);    // 开始需要先进行排序
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();
         findList(result, curr, candidates, 0, target);
