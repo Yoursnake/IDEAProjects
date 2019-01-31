@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-        List<List<Integer>> result = new LeetCode46Permutations().permute(nums);
+        int[] nums = {1, 1, 2};
+        List<List<Integer>> result = new LeetCode47PermutationsII().permuteUnique(nums);
         System.out.println(result);
     }
 }
