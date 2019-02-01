@@ -1,3 +1,14 @@
+/*
+Example 1:
+
+Input: dividend = 10, divisor = 3
+Output: 3
+
+Example 2:
+
+Input: dividend = 7, divisor = -3
+Output: -2
+ */
 public class LeetCode29DivideTwoIntegers {
     public int divide(int dividend, int divisor) {
         if (divisor == -1 && dividend == Integer.MIN_VALUE) return Integer.MAX_VALUE;
