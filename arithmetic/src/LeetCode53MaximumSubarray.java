@@ -13,15 +13,8 @@ public class LeetCode53MaximumSubarray {
         int max = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            if (sum + nums[i] >= nums[i]) {
-                sum = sum + nums[i];
-            } else {
-                sum = nums[i];
-            }
-
-            if (sum > max) {
-                max = sum;
-            }
+            sum = Math.max(sum + nums[i], nums[i]);
+            max = Math.max(sum, max);
         }
 
         return max;
