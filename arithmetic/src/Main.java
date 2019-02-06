@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,13 +10,19 @@ public class Main {
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
 
-        int[][] matrix = {
-                { 1, 2, 3 },
-                { 4, 5, 6 },
-                { 7, 8, 9 }
-        };
 
-        List<Integer> list = new LeetCode54SpiralMatrix().spiralOrder(matrix);
-        System.out.println(list);
+        List<Interval> intervals = new ArrayList<>();
+        intervals.add(new Interval(1, 10));
+        intervals.add(new Interval(2, 3));
+        intervals.add(new Interval(4, 5));
+        intervals.add(new Interval(6, 7));
+        intervals.add(new Interval(8, 9));
+
+
+        List<Interval> list = new LeetCode56MergeIntervals().merge(intervals);
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i).start + "\t" + list.get(i).end);
+        }
     }
 }
