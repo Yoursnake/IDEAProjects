@@ -47,6 +47,7 @@ public class LeetCode47PermutationsII {
         }
     }
 
+    // 从数组中取出一个数后组成新数组
     private int[] AfterNums(int[] nums, int index) {
         ArrayList<Integer> list = new ArrayList<>();
         int[] afterNums = new int[nums.length - 1];
