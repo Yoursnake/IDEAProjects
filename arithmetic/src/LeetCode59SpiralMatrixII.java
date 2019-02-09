@@ -10,6 +10,7 @@ Output:
 ]
  */
 
+
 public class LeetCode59SpiralMatrixII {
     public int[][] generateMatrix(int n) {
         int[][] matrix = new int[n][n];
