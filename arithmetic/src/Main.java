@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
 
-        String result = new LeetCode60PermutationSequence().getPermutation(4, 9);
+        int result = new LeetCode62UniquePaths().uniquePaths(23, 12);
         System.out.println(result);
     }
+
 }
