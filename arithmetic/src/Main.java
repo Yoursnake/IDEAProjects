@@ -7,7 +7,10 @@ public class Main {
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
 
-        int result = new LeetCode62UniquePaths().uniquePaths(23, 12);
+        int[][] a = new int[3][3];
+        a[1][1] = 1;
+
+        int result = new LeetCode63UniquePathsII().uniquePathsWithObstacles(a);
         System.out.println(result);
     }
 
