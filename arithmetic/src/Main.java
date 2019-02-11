@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
 
-        int[][] a = new int[3][3];
-        a[1][1] = 1;
+        String a = "100";
+        String b = "110010";
 
-        int result = new LeetCode63UniquePathsII().uniquePathsWithObstacles(a);
+        String result = new LeetCode67AddBinary().addBinary(a, b);
         System.out.println(result);
     }
 
