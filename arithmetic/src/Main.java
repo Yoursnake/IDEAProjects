@@ -7,11 +7,8 @@ public class Main {
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
 
-        String a = "100";
-        String b = "110010";
-
-        String result = new LeetCode67AddBinary().addBinary(a, b);
-        System.out.println(result);
+        int a = new LeetCode69Sqrt().mySqrt(2147483647);
+        System.out.println(a);
     }
 
 }
