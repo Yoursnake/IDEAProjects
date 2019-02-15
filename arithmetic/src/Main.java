@@ -8,7 +8,8 @@ public class Main {
 //-2147483648
     public static void main(String[] args) {
 //        boolean[][] isUsed = new boolean[2][3];
-        List<List<Integer>> result = new LeetCode77Combinations().combine(4, 2);
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> result = new LeetCode78Subsets().subsets(nums);
         System.out.println(result);
     }
 
