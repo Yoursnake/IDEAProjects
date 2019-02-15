@@ -42,7 +42,7 @@ public class LeetCode74Searcha2DMatrix {
                     targetRow = i;
                 }
             }
-            if (targetRow == -1) targetRow = row - 1;
+            if (targetRow == -1) targetRow = row - 1;   // 边界
         }
 
         // 二分法找元素
