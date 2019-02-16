@@ -107,11 +107,13 @@ public class LeetCode79WordSearch {
             return board[x][y] == word.charAt(index);
         } else {
             if (board[x][y] == word.charAt(index)) {
+                // 使用这个二维数字会优雅许多
                 int[][] d = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
                 isUsed[x][y] = true;
                 for (int i = 0; i < 4; i++) {
                     int newX = x + d[i][0];
                     int newY = y + d[i][1];
+                    // 顺序不能错，因为只有在区域中才能使用 isUsed 数组
                     if (inArea(board, newX, newY) && !isUsed[newX][newY] && findWord(isUsed, board, word, newX, newY, index + 1)) {
                         return true;
                     }
@@ -122,6 +124,7 @@ public class LeetCode79WordSearch {
         }
     }
 
+    // x y 是否在数组中
     private boolean inArea(char[][] board, int x, int y) {
         int row = board.length;
         int col = board[0].length;
