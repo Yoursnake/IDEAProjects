@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa20e801-cde6-480d-a46d-bd0d7a9d3b9f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LeetCode79WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arithmetic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arithmetic/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode79WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode79WordSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -30,8 +27,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="14" selection-end-column="20" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="36" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="11" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -160,11 +157,10 @@
           <file leaf-file-name="LeetCode79WordSearch.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/LeetCode79WordSearch.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="86" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
+                <state relative-caret-position="344">
+                  <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#110#0" expanded="true" />
-                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -821,12 +817,12 @@
       <workItem from="1548732787699" duration="10285000" />
       <workItem from="1548911058561" duration="17874000" />
       <workItem from="1549427390014" duration="7001000" />
-      <workItem from="1550317516360" duration="3438000" />
+      <workItem from="1550317516360" duration="4640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146551000" />
+    <option name="totallyTimeSpent" value="147753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,7 +846,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.27034482" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.27034482" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32827586" />
       <window_info id="Capture Tool" order="2" />
@@ -861,7 +857,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.38068965" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.38068965" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -928,7 +924,7 @@
           <option name="timeStamp" value="142" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="184" />
+      <option name="time" value="188" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1299,21 +1295,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/LeetCode79WordSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="344">
+          <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode79WordSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="86" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
