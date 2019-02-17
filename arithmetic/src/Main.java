@@ -10,10 +10,14 @@ public class Main {
 //                {'A', 'B', 'C', 'E'},
 //                {'S', 'F', 'C', 'S'},
 //                {'A', 'D', 'E', 'E'}};
-        char[][] board = {{'a', 'a'}};
-        String word = "aaa";
-        boolean result = new LeetCode79WordSearch().exist(board, word);
+        int[] nums = {1, 1, 1, 2, 2, 3};
+//        int[] nums = {0, 0, 1, 1, 1, 1, 2, 3, 3};
+        int result = new LeetCode80RemoveDuplicatesfromSortedArrayII().removeDuplicates(nums);
         System.out.println(result);
+
+        for (int i = 0; i < result; i++) {
+            System.out.print(nums[i] + "\t");
+        }
 
     }
 

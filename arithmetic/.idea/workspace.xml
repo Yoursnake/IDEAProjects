@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa20e801-cde6-480d-a46d-bd0d7a9d3b9f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LeetCode79WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode79WordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LeetCode80RemoveDuplicatesfromSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -27,8 +29,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="36" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="11" selection-end-column="36" />
+                <state relative-caret-position="206">
+                  <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -64,15 +66,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LeetCode67AddBinary.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/LeetCode67AddBinary.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="LeetCode69Sqrt.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LeetCode69Sqrt.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -145,7 +138,7 @@
           <file leaf-file-name="LeetCode78Subsets.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LeetCode78Subsets.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
+                <state relative-caret-position="51">
                   <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -154,13 +147,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LeetCode79WordSearch.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LeetCode79WordSearch.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LeetCode79WordSearch.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="344">
-                  <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
+                <state relative-caret-position="34">
+                  <caret line="19" column="33" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LeetCode80RemoveDuplicatesfromSortedArrayII.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/LeetCode80RemoveDuplicatesfromSortedArrayII.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="363">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
                   <folding>
-                    <element signature="e#0#110#0" expanded="true" />
+                    <element signature="e#0#594#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -203,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode19RemoveNthFromEnd.java" />
         <option value="$PROJECT_DIR$/src/LeetCode4FindMedianSortedArray.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/src/TCP/MyTcp.java" />
@@ -252,8 +253,9 @@
         <option value="$PROJECT_DIR$/src/LeetCode75SortColors.java" />
         <option value="$PROJECT_DIR$/src/LeetCode77Combinations.java" />
         <option value="$PROJECT_DIR$/src/LeetCode78Subsets.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/LeetCode79WordSearch.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode80RemoveDuplicatesfromSortedArrayII.java" />
       </list>
     </option>
   </component>
@@ -313,9 +315,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -817,12 +819,13 @@
       <workItem from="1548732787699" duration="10285000" />
       <workItem from="1548911058561" duration="17874000" />
       <workItem from="1549427390014" duration="7001000" />
-      <workItem from="1550317516360" duration="4640000" />
+      <workItem from="1550317516360" duration="5603000" />
+      <workItem from="1550396078498" duration="1960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147753000" />
+    <option name="totallyTimeSpent" value="150676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,7 +849,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.27034482" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.27034482" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32827586" />
       <window_info id="Capture Tool" order="2" />
@@ -857,7 +860,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.38068965" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.38068965" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -870,13 +873,12 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32465753" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32956383" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Properties" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
@@ -886,18 +888,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32876712" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16074313" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32876712" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16074313" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Structure" order="1" weight="0.24959612" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.31643835" />
     </layout-to-restore>
@@ -924,7 +927,7 @@
           <option name="timeStamp" value="142" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="188" />
+      <option name="time" value="190" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -946,20 +949,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode33SearchRotatedSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode34FindFirstLastTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode35SearchInsertPosition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1280,7 +1269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode78Subsets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="51">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1297,18 +1286,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode79WordSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode67AddBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="206">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode80RemoveDuplicatesfromSortedArrayII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#594#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
