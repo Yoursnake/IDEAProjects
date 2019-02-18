@@ -5,7 +5,7 @@
 public class Main {
 //-2147483648
     public static void main(String[] args) {
-        int[] nums = {1, 1,2};
+        int[] nums = {1, 1, 2, 3, 3};
         ListNode head = new ListNode(nums[0]);
         ListNode a = head;
 
@@ -21,7 +21,7 @@ public class Main {
         }
         System.out.println();
 
-        ListNode result = new LeetCode82RemoveDuplicatesfromSortedListII().deleteDuplicates(head);
+        ListNode result = new LeetCode83RemoveDuplicatesfromSortedList().deleteDuplicates(head);
 
         a = result;
         while (a != null) {
