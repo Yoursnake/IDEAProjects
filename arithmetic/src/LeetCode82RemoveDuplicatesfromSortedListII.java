@@ -35,7 +35,7 @@ public class LeetCode82RemoveDuplicatesfromSortedListII {
 
         if (head.next == null || head.next.next == null) return head; // 如果这个时候只有一个结点
 
-        ListNode headNode = head;
+        ListNode beforeNode = head;
         ListNode afterNode = head.next;
         boolean flag = false;       // 表示是否连续
 
@@ -45,15 +45,15 @@ public class LeetCode82RemoveDuplicatesfromSortedListII {
                 afterNode = afterNode.next;
                 // 如果 afterNode.next 是 null，证明最后几个数都是一致的
                 if (afterNode.next == null) {
-                    headNode.next = null;
+                    beforeNode.next = null;
                     break;
                 }
             } else {
                 if (!flag) {    // 不连续的话直接往后走就行了
-                    headNode = headNode.next;
+                    beforeNode = beforeNode.next;
                     afterNode = afterNode.next;
                 } else {
-                    headNode.next = afterNode.next;
+                    beforeNode.next = afterNode.next;
                     afterNode = afterNode.next;
                     flag = false;
                 }
