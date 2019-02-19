@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -30,13 +32,10 @@ public class Main {
 //            a = a.next;
 //        }
 
-        int[] num1 = {1, 2, 3, 0, 0, 0};
-        int[] num2 = {2, 5, 6};
+        int[] nums = {1, 2, 2};
 
-        new LeetCode88MergeSortedArray().merge(num1, 3, num2, 3);
-        for (int i : num1) {
-            System.out.print(i + "\t");
-        }
+        List<List<Integer>> result = new LeetCode90SubsetsII().subsetsWithDup(nums);
+        System.out.println(result);
     }
 
 }
