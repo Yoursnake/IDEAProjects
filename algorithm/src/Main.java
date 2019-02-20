@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -32,10 +30,9 @@ public class Main {
 //            a = a.next;
 //        }
 
-        int[] nums = {1, 2, 2};
-
-        List<List<Integer>> result = new LeetCode90SubsetsII().subsetsWithDup(nums);
-        System.out.println(result);
+        String s = "226";
+        int a = new LeetCode91DecodeWays().numDecodings(s);
+        System.out.println(a);
     }
 
 }
