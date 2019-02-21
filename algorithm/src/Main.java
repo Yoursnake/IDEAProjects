@@ -35,6 +35,14 @@ public class Main {
 //        String s = "226";
 //        int a = new LeetCode91DecodeWays().numDecodings(s);
 //        System.out.println(a);
+
+        int[] nums = {2, 3, 4, 1, 2};
+        new QuickSort().quickSort(nums);
+
+        for (int num : nums) {
+            System.out.print(num + "\t");
+        }
+
     }
 
 }
