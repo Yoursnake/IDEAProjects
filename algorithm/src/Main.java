@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -36,12 +38,20 @@ public class Main {
 //        int a = new LeetCode91DecodeWays().numDecodings(s);
 //        System.out.println(a);
 
-        int[] nums = {2, 3, 4, 1, 2};
-        new QuickSort().quickSort(nums);
+//        int[] nums = {2, 3, 4, 1, 2};
+//        new QuickSort().quickSort(nums);
+//
+//        for (int num : nums) {
+//            System.out.print(num + "\t");
+//        }
 
-        for (int num : nums) {
-            System.out.print(num + "\t");
-        }
+//        String s = "12345";
+//        String a = s.substring(0, 3);
+//        System.out.println(a);
+
+        String s = "010010";
+        List<String> result = new LeetCode93RestoreIPAddresses().restoreIpAddresses(s);
+        System.out.println(result);
 
     }
 
