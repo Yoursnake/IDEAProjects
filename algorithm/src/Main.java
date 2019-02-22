@@ -49,12 +49,9 @@ public class Main {
 //        String a = s.substring(0, 3);
 //        System.out.println(a);
 
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
 
-        List<Integer> result = new LeetCode94BinaryTreeInorderTraversal().inorderTraversal(root);
-        System.out.println(result);
+        List<TreeNode> result = new LeetCode95UniqueBinarySearchTreesII().generateTrees(0);
+        System.out.println(result.size());
 
     }
 
