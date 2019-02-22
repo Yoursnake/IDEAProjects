@@ -49,8 +49,11 @@ public class Main {
 //        String a = s.substring(0, 3);
 //        System.out.println(a);
 
-        String s = "010010";
-        List<String> result = new LeetCode93RestoreIPAddresses().restoreIpAddresses(s);
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+
+        List<Integer> result = new LeetCode94BinaryTreeInorderTraversal().inorderTraversal(root);
         System.out.println(result);
 
     }
