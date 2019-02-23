@@ -17,6 +17,8 @@ Given n = 3, there are a total of 5 unique BST's:
  */
 
 public class LeetCode96UniqueBinarySearchTrees {
+
+    // dp 做法
     public int numTrees(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;      // 0 个元素算一种情况
@@ -32,5 +34,26 @@ public class LeetCode96UniqueBinarySearchTrees {
         }
 
         return dp[n];
+    }
+
+//    // 递归做法，时间复杂度较高，应改为 dp
+//    public int numTrees(int n) {
+//        if (n < 1) return 0;
+//        else return findNum(1, n);
+//    }
+//
+//    private int findNum(int left, int right) {
+//        if (left >= right) return 1;
+//
+//        int result = 0;
+//
+//        for (int i = left; i <= right; i++) {
+//            int leftNum = findNum(left, i - 1);
+//            int rightNum = findNum(i + 1, right);
+//
+//            result += leftNum * rightNum;
+//        }
+
+        return result;
     }
 }
