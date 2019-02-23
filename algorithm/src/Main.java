@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -50,8 +48,8 @@ public class Main {
 //        System.out.println(a);
 
 
-        List<TreeNode> result = new LeetCode95UniqueBinarySearchTreesII().generateTrees(0);
-        System.out.println(result.size());
+        int result = new LeetCode96UniqueBinarySearchTrees().numTrees(3);
+        System.out.println(result);
 
     }
 
