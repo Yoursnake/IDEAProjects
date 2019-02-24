@@ -6,11 +6,13 @@
 public class Main {
 //-2147483648
     public static void main(String[] args) {
-        String s1 = "aabcc";
-        String s2 = "dbbca";
-        String s3 = "aadbbcbcac";
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        root.right.left = new TreeNode(3);
+        root.right.right = new TreeNode(6);
 
-        boolean result = new LeetCode97InterleavingString().isInterleave(s1, s2, s3);
+        boolean result = new LeetCode98ValidateBinarySearchTree().isValidBST(root);
         System.out.println(result);
 
 
