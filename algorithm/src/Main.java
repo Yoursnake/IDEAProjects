@@ -2,19 +2,19 @@
  * Created by shengliyi on 2017/3/4.
  */
 
-
 public class Main {
 //-2147483648
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(5);
-        root.left = new TreeNode(1);
-        root.right = new TreeNode(4);
-        root.right.left = new TreeNode(3);
-        root.right.right = new TreeNode(6);
+        String s = "aaa";
+        String p = "ab*ac*a";
 
-        boolean result = new LeetCode98ValidateBinarySearchTree().isValidBST(root);
+        boolean result = new LeetCode10RegularExpressionMatching().isMatch(s, p);
         System.out.println(result);
 
+//        String[] a = p.split("\\*");
+//        for (String s1 : a) {
+//            System.out.println(s1);
+//        }
 
     }
 
