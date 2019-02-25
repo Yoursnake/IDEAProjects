@@ -23,8 +23,8 @@ public class LeetCode11MostWater {
         while (left < right) {
             int area;
             int minHeight;
-            minHeight = height[left]<height[right]?height[left]:height[right];
-            area = minHeight*(right - left);
+            minHeight = height[left] < height[right] ? height[left] : height[right];
+            area = minHeight * (right - left);
             if (area > maxArea) maxArea = area;
             if (height[left] < height[right]) left++;
             else right--;
