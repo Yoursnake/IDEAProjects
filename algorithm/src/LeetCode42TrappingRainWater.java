@@ -41,4 +41,25 @@ public class LeetCode42TrappingRainWater {
 
         return result;
     }
+
+//    // DP 方法
+//    public int trap(int[] height) {
+//        int length = height.length;
+//        //leftMax数组
+//        int[] left = new int[length];
+//        //rightMax数组
+//        int[] right = new int[length];
+//
+//        int leftMax = 0;
+//        int rightMax = 0;
+//        for(int i = 0 ; i<length ; i++){
+//            leftMax = left[i] = Math.max(leftMax,    height[i]);
+//            rightMax = right[length-i-1] = Math.max(rightMax, height[length-i-1]);
+//        }
+//        int result = 0;
+//        for(int j = 0 ; j<length ; j++){
+//            result += Math.min(left[j], right[j]) - height[j];
+//        }
+//        return result;
+//    }
 }
