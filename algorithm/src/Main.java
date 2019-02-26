@@ -5,8 +5,8 @@
 public class Main {
 //-2147483648
     public static void main(String[] args) {
-        String s = "aaa";
-        String p = "ab*ac*a";
+        String s = "aa";
+        String p = "a*";
 
         boolean result = new LeetCode10RegularExpressionMatching().isMatch(s, p);
         System.out.println(result);

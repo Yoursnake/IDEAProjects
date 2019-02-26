@@ -52,20 +52,9 @@ public class LeetCode10RegularExpressionMatching {
 
     // DP
     public boolean isMatch(String s, String p) {
-//        if (p.length() == 0) return s.length() == 0;
-//        if (s.length() == 0) {
-//            if (p.length() % 2 != 0) {
-//                return false;
-//            } else {
-//                for (int i = 1; i < p.length(); i = i + 2) {
-//                    if (p.charAt(i) != '*') return false;
-//                }
-//                return true;
-//            }
-//        }
 
-        String pNew = "";
-        List<Integer> starPos = new ArrayList<>();
+        String pNew = "";   // 用于存储没有 '*' 的 p
+        List<Integer> starPos = new ArrayList<>();  // 用于表示 pNew 中有 '*' 字母的位置
         char[] pChars = p.toCharArray();
 
         for (int i = 0; i < pChars.length; i++) {
@@ -76,17 +65,24 @@ public class LeetCode10RegularExpressionMatching {
         boolean[][] dp = new boolean[pNew.length() + 1][s.length() + 1];
         dp[0][0] = true;
 
-        for (int i = 1; i < pNew.length(); i++) {
+        // 第一行除了第一个一定都是0，不用遍历
+        // 第一列如果从第一个开始连续有 '*' 则赋值到没有 '*' 为止
+        for (int i = 1; i < pNew.length() + 1; i++) {
             if (starPos.contains(i)) dp[i][0] = true;
             else break;
         }
 
-        for (int i = 1; i < pNew.length(); i++) {
-            for (int j = 1; j < s.length(); j++) {
-                if (!starPos.contains(i)) {
-                    dp[i][j] = dp[i - 1][j - 1] && (s.charAt(j) == pNew.charAt(i) || pNew.charAt(i) == '.');
-                } else {
-                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j] && (s.charAt(j) == pNew.charAt(i) || pNew.charAt(i) == '.');
+        for (int i = 1; i < pNew.length() + 1; i++) {
+            for (int j = 1; j < s.length() + 1; j++) {
+                // 左上角元素如果是 true，则如果当前字符匹配则为 true
+                dp[i][j] = dp[i - 1][j - 1] && (s.charAt(j - 1) == pNew.charAt(i - 1) || pNew.charAt(i - 1) == '.');
+
+                // 如果是 '*' 则分两种情况
+                // 1. 上方有 true
+                // 2. 左方有 true 且 当前字符匹配
+                if (starPos.contains(i)) {
+                    dp[i][j] |= dp[i - 1][j] ||
+                            dp[i][j - 1] && (s.charAt(j - 1) == pNew.charAt(i - 1) || pNew.charAt(i - 1) == '.');
                 }
             }
         }
