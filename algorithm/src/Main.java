@@ -7,14 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Utils utils = new Utils();
 
-        String s = "aa";
-        String p = "a*b*c*d";
+        int[] height = {4,2,3};
 
-//        boolean result = new LeetCode10RegularExpressionMatching().isMatch(s, p);
-//        System.out.println(result);
+        int result = new LeetCode42TrappingRainWater().trap(height);
+        System.out.println(result);
 
-        String[] a = p.split("\\*");
-        utils.printArray(a);
     }
 
 }
