@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Utils {
-    public static ListNode linkedListGiveValue(int[] nums) {
+public class Utils<E> {
+    public ListNode linkedListGiveValue(int[] nums) {
         ListNode head = new ListNode(nums[0]);
         ListNode a = head;
 
@@ -14,16 +14,16 @@ public class Utils {
         return head;
     }
 
-    public static List<Integer> listGiveValue(int[] nums) {
-        List<Integer> list = new ArrayList<>();
-        for (int num : nums) {
+    public List<E> listGiveValue(E[] nums) {
+        List<E> list = new ArrayList<>();
+        for (E num : nums) {
             list.add(num);
         }
 
         return list;
     }
 
-    public static void printList(List<Integer> list) {
+    public void printList(List<E> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + "\t");
         }
@@ -31,7 +31,7 @@ public class Utils {
         System.out.println();
     }
 
-    public static void printLinkedList(ListNode node) {
+    public void printLinkedList(ListNode node) {
         while (node != null) {
             System.out.print(node.val);
             if (node.next != null) System.out.print("-->");
@@ -41,8 +41,8 @@ public class Utils {
         System.out.println();
     }
 
-    public static void printArray(int[] nums) {
-        for (int num : nums) {
+    public void printArray(E[] nums) {
+        for (E num : nums) {
             System.out.print(num + "\t");
         }
 

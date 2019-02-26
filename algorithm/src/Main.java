@@ -5,17 +5,16 @@
 public class Main {
 //-2147483648
     public static void main(String[] args) {
+        Utils utils = new Utils();
+
         String s = "aa";
-        String p = "a*";
+        String p = "a*b*c*d";
 
-        boolean result = new LeetCode10RegularExpressionMatching().isMatch(s, p);
-        System.out.println(result);
+//        boolean result = new LeetCode10RegularExpressionMatching().isMatch(s, p);
+//        System.out.println(result);
 
-//        String[] a = p.split("\\*");
-//        for (String s1 : a) {
-//            System.out.println(s1);
-//        }
-
+        String[] a = p.split("\\*");
+        utils.printArray(a);
     }
 
 }
