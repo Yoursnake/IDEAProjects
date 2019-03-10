@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -9,14 +7,17 @@ public class Main {
     public static void main(String[] args) {
         Utils utils = new Utils();
 
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.right.right = new TreeNode(5);
+//        TreeNode root = new TreeNode(1);
+//        root.left = new TreeNode(2);
+//        root.right = new TreeNode(3);
+//        root.left.left = new TreeNode(4);
+//        root.right.right = new TreeNode(5);
+//
+//        List<List<Integer>> result = new LeetCode103BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root);
+//        System.out.println(result);
 
-        List<List<Integer>> result = new LeetCode103BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root);
-        System.out.println(result);
+        int[] a = null;
+        System.out.println(a.length);
 
     }
 
