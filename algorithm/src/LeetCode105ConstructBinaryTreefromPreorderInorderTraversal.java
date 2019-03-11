@@ -38,7 +38,7 @@ public class LeetCode105ConstructBinaryTreefromPreorderInorderTraversal {
         // inStart ~ rootInIndex - 1 的值是左子树
         // rootInIndex + 1 ~ inEnd 是右子树
         int rootInIndex;
-        for (rootInIndex = inStart; rootInIndex < inEnd; rootInIndex++) {
+        for (rootInIndex = inStart; rootInIndex <= inEnd; rootInIndex++) {
             if (inorder[rootInIndex] == rootValue) break;
         }
 
