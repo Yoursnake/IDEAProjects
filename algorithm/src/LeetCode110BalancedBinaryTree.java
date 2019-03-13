@@ -33,6 +33,7 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
  * }
  */
 public class LeetCode110BalancedBinaryTree {
+
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
 
