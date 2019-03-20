@@ -9,14 +9,16 @@ public class Main {
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.right.right = new TreeNode(5);
+        root.right = new TreeNode(5);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right.right = new TreeNode(6);
 //
 //        List<List<Integer>> result = new LeetCode103BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root);
 
-        int result = new LeetCode111MinimumDepthofBinaryTree().minDepth(root);
-        System.out.println(result);
+        new LeetCode114FlattenBinaryTreetoLinkedList().flatten(root);
+
+
 
 //        int[] a = null;
 //        System.out.println(a.length);
