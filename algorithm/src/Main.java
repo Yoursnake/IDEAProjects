@@ -15,9 +15,9 @@ public class Main {
 
 //        int result = new LeetCode120Triangle().minimumTotal(triangle);
 
-        int[] a = {7, 1, 5, 3, 6, 4};
+        int[] a = {3,3,5,0,0,3,1,4};
         int[] b = {1,2,3,4,5};
-        int result = new LeetCode122BestTime2BuyAndSellStockII().maxProfit(b);
+        int result = new LeetCode123BestTime2BuyAndSellStockIII().maxProfit(a);
         System.out.println(result);
     }
 
