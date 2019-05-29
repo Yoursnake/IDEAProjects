@@ -17,7 +17,8 @@ public class Main {
 
         int[] a = {3,3,5,0,0,3,1,4};
         int[] b = {1,2,3,4,5};
-        int result = new LeetCode123BestTime2BuyAndSellStockIII().maxProfit(a);
+        String s = "0P";
+        boolean result = new LeetCode125ValidPalindrome().isPalindrome(s);
         System.out.println(result);
     }
 
