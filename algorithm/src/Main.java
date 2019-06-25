@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -12,5 +14,9 @@ public class Main {
 //
 //        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
 //        System.out.println(result);
+
+        String s = "aab";
+        List<List<String>> result = new LeetCode131PalindromePartitioning().partition(s);
+        System.out.println(result);
     }
 }
