@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -16,7 +14,7 @@ public class Main {
 //        System.out.println(result);
 
         String s = "bb";
-        List<List<String>> result = new LeetCode131PalindromePartitioning().partition(s);
+        int result = new LeetCode132PalindromePartitioningII().minCut(s);
         System.out.println(result);
     }
 }

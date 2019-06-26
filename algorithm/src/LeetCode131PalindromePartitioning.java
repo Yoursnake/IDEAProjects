@@ -48,7 +48,7 @@ public class LeetCode131PalindromePartitioning {
 //        return result;
 //    }
 
-    // 法二：backtrack-DFS 2 ms
+    // 法二：backtrack-DFS 95%+
     public List<List<String>> partition(String s) {
         List<List<String>> result = new ArrayList<>();
         List<String> currList = new ArrayList<>();
