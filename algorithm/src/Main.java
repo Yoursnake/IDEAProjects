@@ -13,8 +13,8 @@ public class Main {
 //        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
 //        System.out.println(result);
 
-        String s = "bb";
-        int result = new LeetCode132PalindromePartitioningII().minCut(s);
+        int[] nums = {4,1,2,1,2};
+        int result = new LeetCdoe136SingleNumber().singleNumber(nums);
         System.out.println(result);
     }
 }
