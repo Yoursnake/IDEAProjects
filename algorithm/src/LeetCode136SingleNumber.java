@@ -17,7 +17,7 @@ Input: [4,1,2,1,2]
 Output: 4
  */
 
-public class LeetCdoe136SingleNumber {
+public class LeetCode136SingleNumber {
 //    // use set 33.52%
 //    public int singleNumber(int[] nums) {
 //        HashSet<Integer> set = new HashSet<>();
