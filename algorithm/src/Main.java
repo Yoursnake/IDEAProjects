@@ -12,8 +12,9 @@ public class Main {
 //
 //        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
 //        System.out.println(result);
-        int[] nums = {2, 2, 3, 2};
-        int result = new LeetCode137SingleNumberII().singleNumber(nums);
+        int[] gas = {1, 2, 3, 4, 5};
+        int[] cost = {3, 4, 5, 1, 2};
+        int result = new LeetCode134GasStation().canCompleteCircuit(gas, cost);
         System.out.println(result);
     }
 }
