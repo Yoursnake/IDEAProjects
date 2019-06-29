@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -12,9 +15,16 @@ public class Main {
 //
 //        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
 //        System.out.println(result);
-        int[] gas = {1, 2, 3, 4, 5};
-        int[] cost = {3, 4, 5, 1, 2};
-        int result = new LeetCode134GasStation().canCompleteCircuit(gas, cost);
+
+        String s = "aaaaaaa";
+        List<String> wordDict = new ArrayList<>();
+        wordDict.add("aaaa");
+        wordDict.add("aa");
+//        wordDict.add("sand");
+//        wordDict.add("and");
+//        wordDict.add("cat");
+
+        boolean result = new LeetCode139WordBreak().wordBreak(s, wordDict);
         System.out.println(result);
     }
 }
