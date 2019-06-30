@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,15 +17,21 @@ public class Main {
 //        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
 //        System.out.println(result);
 
-        String s = "aaaaaaa";
-        List<String> wordDict = new ArrayList<>();
-        wordDict.add("aaaa");
-        wordDict.add("aa");
-//        wordDict.add("sand");
-//        wordDict.add("and");
-//        wordDict.add("cat");
+//        String s = "aaaaaaa";
+//        List<String> wordDict = new ArrayList<>();
+//        wordDict.add("aaaa");
+//        wordDict.add("aa");
+////        wordDict.add("sand");
+////        wordDict.add("and");
+////        wordDict.add("cat");
+//
+//        boolean result = new LeetCode139WordBreak().wordBreak(s, wordDict);
+//        System.out.println(result);
 
-        boolean result = new LeetCode139WordBreak().wordBreak(s, wordDict);
+        String s = "catsanddog";
+        List<String> wordDict = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
+        List<String> result = new LeetCode140WordBreakII().wordBreak(s, wordDict);
+
         System.out.println(result);
     }
 }
