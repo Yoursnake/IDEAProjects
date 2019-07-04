@@ -1,37 +1,21 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
     public static void main(String[] args) {
-//        TreeNode root = new TreeNode(4);
-//        root.left = new TreeNode(9);
-//        root.left.left = new TreeNode(5);
-//        root.left.right = new TreeNode(1);
-//        root.right = new TreeNode(0);
-//
-//        int result = new LeetCode129SumRoot2LeafNumbers().sumNumbers(root);
-//        System.out.println(result);
 
-//        String s = "aaaaaaa";
-//        List<String> wordDict = new ArrayList<>();
-//        wordDict.add("aaaa");
-//        wordDict.add("aa");
-////        wordDict.add("sand");
-////        wordDict.add("and");
-////        wordDict.add("cat");
-//
-//        boolean result = new LeetCode139WordBreak().wordBreak(s, wordDict);
-//        System.out.println(result);
+        LeetCode143ReorderList.ListNode node = new LeetCode143ReorderList.ListNode(1);
+        node.next = new LeetCode143ReorderList.ListNode(2);
+        node.next.next = new LeetCode143ReorderList.ListNode(3);
+        node.next.next.next = new LeetCode143ReorderList.ListNode(4);
+//        node.next.next.next.next = new LeetCode143ReorderList.ListNode(5);
 
-        String s = "catsanddog";
-        List<String> wordDict = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
-        List<String> result = new LeetCode140WordBreakII().wordBreak(s, wordDict);
+        new LeetCode143ReorderList().reorderList(node);
 
-        System.out.println(result);
+        while (node != null) {
+            System.out.println(node.val);
+            node = node.next;
+        }
     }
 }
