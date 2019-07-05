@@ -9,7 +9,7 @@ public class Main {
         node.next = new LeetCode143ReorderList.ListNode(2);
         node.next.next = new LeetCode143ReorderList.ListNode(3);
         node.next.next.next = new LeetCode143ReorderList.ListNode(4);
-//        node.next.next.next.next = new LeetCode143ReorderList.ListNode(5);
+        node.next.next.next.next = new LeetCode143ReorderList.ListNode(5);
 
         new LeetCode143ReorderList().reorderList(node);
 
