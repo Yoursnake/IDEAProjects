@@ -42,6 +42,7 @@ public class LeetCode147InsertionSortList {
         ListNode(int x) { val = x; }
     }
 
+    // 96.05% insertion sort
     public ListNode insertionSortList(ListNode head) {
         if (head == null || head.next == null) return head;
 
