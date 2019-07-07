@@ -31,9 +31,7 @@ cache.get(4);       // returns 4
  */
 
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Your LRUCache object will be instantiated and called as such:
@@ -42,50 +40,138 @@ import java.util.List;
  * obj.put(key,value);
  */
 
-// 13.7% wait improve
+//// 13.7% wait improve
+//public class LeetCode146LRUCache {
+//    HashMap<Integer, Integer> map;
+//    List<Integer> list;
+//    int capacity;
+//
+//    public LeetCode146LRUCache(int capacity) {
+//        map = new HashMap<>();
+//        list = new ArrayList<>();
+//        this.capacity = capacity;
+//    }
+//
+//    public int get(int key) {
+//        if (map.containsKey(key)) {
+//            resortList(list, key);
+//            return map.get(key);
+//        }
+//        return -1;
+//    }
+//
+//    public void put(int key, int value) {
+//        if (map.containsKey(key)) {
+//            map.put(key, value);
+//            resortList(list, key);
+//            return;
+//        }
+//
+//        if (map.size() == capacity) {
+//            int leastUseKey = list.get(0);
+//            list.remove(0);
+//            map.remove(leastUseKey);
+//        }
+//
+//        map.put(key, value);
+//        list.add(key);
+//    }
+//
+//    // 重新排列：从旧到新
+//    private void resortList(List<Integer> list, int key) {
+//        for (int i = 0; i < list.size(); i++) {
+//            // 找到该 key 把它删掉，然后在末尾添加它
+//            if (list.get(i) == key) {
+//                list.remove(i);
+//                list.add(key);
+//                break;
+//            }
+//        }
+//    }
+//}
+
+// time O(1)  double linked list   56.57%
 public class LeetCode146LRUCache {
-    HashMap<Integer, Integer> map;
-    List<Integer> list;
-    int capacity;
+    class ListNode {
+        int key;
+        int val;
+        ListNode pre;
+        ListNode next;
+
+        public ListNode(int key, int val) {
+            this.key = key;
+            this.val = val;
+            this.pre = null;
+            this.next = null;
+        }
+    }
+
+    class DoubleLinkedList {
+        private ListNode head;
+        private ListNode tail;
+
+        public DoubleLinkedList() {
+            head = new ListNode(0, 0);
+            tail = new ListNode(0, 0);
+            head.next = tail;
+            tail.pre = head;
+        }
+
+        private void addFirst(ListNode first) {
+            head.next.pre = first;
+            first.next = head.next;
+            head.next = first;
+            first.pre = head;
+        }
+
+        private void move2First(ListNode node) {
+            node.pre.next = node.next;
+            node.next.pre = node.pre;
+            addFirst(node);
+        }
+
+        private ListNode removeLast() {
+            ListNode last = tail.pre;
+            last.pre.next = tail;
+            tail.pre = last.pre;
+            return last;
+        }
+    }
+
+    private HashMap<Integer, ListNode> map;
+    private int capacity;
+    private DoubleLinkedList list;
 
     public LeetCode146LRUCache(int capacity) {
-        map = new HashMap<>();
-        list = new ArrayList<>();
+        this.map = new HashMap<>();
         this.capacity = capacity;
+        this.list = new DoubleLinkedList();
     }
 
     public int get(int key) {
-        if (map.containsKey(key)) {
-            resortList(list, key);
-            return map.get(key);
+        if (!map.containsKey(key)) {
+            return -1;
+        } else {
+            list.move2First(map.get(key));
+            return map.get(key).val;
         }
-        return -1;
     }
 
     public void put(int key, int value) {
         if (map.containsKey(key)) {
-            map.put(key, value);
-            resortList(list, key);
+            ListNode node = map.get(key);
+            node.val = value;
+            list.move2First(node);
             return;
         }
 
-        if (map.size() == capacity) {
-            int leastUseKey = list.get(0);
-            list.remove(0);
-            map.remove(leastUseKey);
-        }
+        ListNode node = new ListNode(key, value);
+        map.put(key, node);
+        list.addFirst(node);
 
-        map.put(key, value);
-        list.add(key);
-    }
-
-    private void resortList(List<Integer> list, int key) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == key) {
-                list.remove(i);
-                list.add(key);
-                break;
-            }
+        if (map.size() > capacity) {
+            ListNode last = list.removeLast();
+            map.remove(last.key);
         }
     }
 }
