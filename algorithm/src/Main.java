@@ -4,15 +4,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        LeetCode148SortList.ListNode head = new LeetCode148SortList.ListNode(-1);
-        head.next = new LeetCode148SortList.ListNode(5);
-        head.next.next = new LeetCode148SortList.ListNode(3);
-        head.next.next.next = new LeetCode148SortList.ListNode(4);
-        head.next.next.next.next = new LeetCode148SortList.ListNode(0);
+        String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
 
-        printLinkedList(head);
-        head = new LeetCode148SortList().sortList(head);
-        printLinkedList(head);
+        int result = new LeetCode150EvaluateReversePolishNotation().evalRPN(tokens);
+        System.out.println(result);
     }
 
     public static void printLinkedList(LeetCode148SortList.ListNode node) {
