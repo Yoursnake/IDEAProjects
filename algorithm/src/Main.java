@@ -4,9 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
+        String s = "a good   example";
 
-        int result = new LeetCode150EvaluateReversePolishNotation().evalRPN(tokens);
+        String result = new LeetCode151ReverseWordsinaString().reverseWords(s);
         System.out.println(result);
     }
 
