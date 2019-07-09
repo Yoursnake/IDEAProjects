@@ -4,10 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        String s = "  a good   example  ";
+        int[] nums = {1,2};
 
-
-        String result = new LeetCode151ReverseWordsinaString().reverseWords(s);
+        int result = new LeetCode153FindMinimuminRotatedSortedArray().findMin(nums);
         System.out.println(result);
     }
 
