@@ -4,7 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        String s = "a good   example";
+        String s = "  a good   example  ";
+
 
         String result = new LeetCode151ReverseWordsinaString().reverseWords(s);
         System.out.println(result);

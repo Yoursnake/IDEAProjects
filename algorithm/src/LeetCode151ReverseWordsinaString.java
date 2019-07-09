@@ -38,33 +38,50 @@ For C programmers, try to solve it in-place in O(1) extra space.
  */
 
 public class LeetCode151ReverseWordsinaString {
+//    // my 67%
+//    public String reverseWords(String s) {
+//        char[] words = s.trim().toCharArray();
+//        int len = words.length;
+//        int ptr = len - 1;
+//
+//        StringBuilder resSB = new StringBuilder();
+//        StringBuilder tmpSB = new StringBuilder();
+//        while (ptr >= 0) {
+//            char curr = words[ptr];
+//            if (curr != ' ') {
+//                tmpSB.insert(0, curr);
+//            } else {
+//                // 如果 tmpSb 长度为 0，则不添加到 resSb 中
+//                if (tmpSB.length() == 0) {
+//                    ptr--;
+//                    continue;
+//                }
+//
+//                resSB.append(tmpSB);
+//                resSB.append(' ');
+//                tmpSB = new StringBuilder();
+//            }
+//
+//            ptr--;
+//        }
+//
+//        resSB.append(tmpSB);
+//        return resSB.toString();
+//    }
+
+    // improve 99.9%
     public String reverseWords(String s) {
-        char[] words = s.trim().toCharArray();
-        int len = words.length;
-        int ptr = len - 1;
+        String[] words = s.split(" ");
 
-        StringBuilder resSB = new StringBuilder();
-        StringBuilder tmpSB = new StringBuilder();
-        while (ptr >= 0) {
-            char curr = words[ptr];
-            if (curr != ' ') {
-                tmpSB.insert(0, curr);
-            } else {
-                // 如果 tmpSb 长度为 0，则不添加到 resSb 中
-                if (tmpSB.length() == 0) {
-                    ptr--;
-                    continue;
-                }
+        StringBuilder result = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            String curr = words[i];
 
-                resSB.append(tmpSB);
-                resSB.append(' ');
-                tmpSB = new StringBuilder();
-            }
-
-            ptr--;
+            if (curr.isEmpty()) continue;
+            if (result.length() > 0) result.append(" ");
+            result.append(curr);
         }
 
-        resSB.append(tmpSB);
-        return resSB.toString();
+        return result.toString();
     }
 }
