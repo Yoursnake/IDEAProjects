@@ -4,9 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1,2};
+        int[] nums = {1,3,5};
 
-        int result = new LeetCode153FindMinimuminRotatedSortedArray().findMin(nums);
+        int result = new LeetCode154FindMinimuminRotatedSortedArrayII().findMin(nums);
         System.out.println(result);
     }
 
