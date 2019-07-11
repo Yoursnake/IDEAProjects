@@ -6,7 +6,7 @@ Output: [0,0,1,1,2,2]
 
  */
 
-public class LeetCode75SortColors {
+public class LeetCode075SortColors {
 //    // 扫两遍
 //    public void sortColors(int[] nums) {
 //        int[] colorNum = new int[3];

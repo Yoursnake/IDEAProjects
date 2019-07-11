@@ -2,7 +2,7 @@
 未完成
  */
 
-public class LeetCode8atoi {
+public class LeetCode008atoi {
     public int myAtoi(String str) {
         String newStr = str.trim();
         char[] c = newStr.toCharArray();

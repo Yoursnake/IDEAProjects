@@ -35,7 +35,7 @@ import java.util.List;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class LeetCode95UniqueBinarySearchTreesII {
+public class LeetCode095UniqueBinarySearchTreesII {
     public List<TreeNode> generateTrees(int n) {
         if (n < 1) return new ArrayList<>();
         else return generate(1, n);

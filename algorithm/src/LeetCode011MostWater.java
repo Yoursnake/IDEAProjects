@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/3/17.
  */
-public class LeetCode11MostWater {
+public class LeetCode011MostWater {
 
     public static int maxArea(int[] height) {
         int maxArea = 0;

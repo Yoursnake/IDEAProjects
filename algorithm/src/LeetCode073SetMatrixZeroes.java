@@ -28,7 +28,7 @@ Output:
   [0,3,1,0]
 ]
  */
-public class LeetCode73SetMatrixZeroes {
+public class LeetCode073SetMatrixZeroes {
 
 //    // 空间复杂度 O(m+n)
 //    public void setZeroes(int[][] matrix) {

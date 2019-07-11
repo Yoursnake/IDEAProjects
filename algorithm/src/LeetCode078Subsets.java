@@ -21,7 +21,7 @@ Output:
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode78Subsets {
+public class LeetCode078Subsets {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();

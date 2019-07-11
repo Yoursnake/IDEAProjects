@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/3/31.
  */
-public class LeetCode38CountAndSay {
+public class LeetCode038CountAndSay {
     public static String countAndSay(int n) {
         if (n == 1)
             return "1";     // 递归的出口

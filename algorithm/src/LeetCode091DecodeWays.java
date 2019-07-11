@@ -20,7 +20,7 @@ Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
  */
 
-public class LeetCode91DecodeWays {
+public class LeetCode091DecodeWays {
     public int numDecodings(String s) {
 
         if (s.charAt(0) == '0') return 0;

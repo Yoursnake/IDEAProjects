@@ -13,7 +13,7 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 import java.util.List;
 
-public class LeetCode57InsertInterval {
+public class LeetCode057InsertInterval {
     public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
         int originSize = intervals.size();
         if (originSize == 0) {

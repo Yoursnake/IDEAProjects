@@ -48,7 +48,7 @@ Output: false
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode10RegularExpressionMatching {
+public class LeetCode010RegularExpressionMatching {
 
     // DP
     public boolean isMatch(String s, String p) {

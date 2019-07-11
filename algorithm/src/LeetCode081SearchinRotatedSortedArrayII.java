@@ -9,7 +9,7 @@ Example 2:
 Input: nums = [2,5,6,0,0,1,2], target = 3
 Output: false
  */
-public class LeetCode81SearchinRotatedSortedArrayII {
+public class LeetCode081SearchinRotatedSortedArrayII {
     public boolean search(int[] nums, int target) {
         int len = nums.length;
         int low = 0;

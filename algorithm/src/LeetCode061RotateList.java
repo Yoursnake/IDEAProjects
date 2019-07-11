@@ -28,7 +28,7 @@ rotate 4 steps to the right: 2->0->1->NULL
  * }
  */
 
-public class LeetCode61RotateList {
+public class LeetCode061RotateList {
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null) return null;
 

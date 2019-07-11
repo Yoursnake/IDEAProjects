@@ -41,7 +41,7 @@ rule
    without repetition.
  */
 
-public class LeetCode36ValidSudoku {
+public class LeetCode036ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
         int rowLen = board.length;
         int colLen = board.length;

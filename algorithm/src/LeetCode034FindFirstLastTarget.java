@@ -9,7 +9,7 @@ Example 2:
 Input: nums = [5,7,7,8,8,10], target = 6
 Output: [-1,-1]
  */
-public class LeetCode34FindFirstLastTarget {
+public class LeetCode034FindFirstLastTarget {
     public int[] searchRange(int[] nums, int target) {
         int end = nums.length - 1;
         int index = findTarget(nums, target, 0, end);

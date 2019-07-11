@@ -17,7 +17,7 @@ Output: 1->4->3->2->5->NULL
  *     ListNode(int x) { val = x; }
  * }
  */
-public class LeetCode92ReverseLinkedListII {
+public class LeetCode092ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (head.next == null || m == n) return head;
 

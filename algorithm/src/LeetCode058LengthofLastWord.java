@@ -1,4 +1,4 @@
-public class LeetCode58LengthofLastWord {
+public class LeetCode058LengthofLastWord {
     public int lengthOfLastWord(String s) {
         String[] words = s.split(" ");
         if (words.length == 0) return 0;

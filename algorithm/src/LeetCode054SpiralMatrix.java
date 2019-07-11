@@ -23,7 +23,7 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode54SpiralMatrix {
+public class LeetCode054SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
         int row = matrix.length;

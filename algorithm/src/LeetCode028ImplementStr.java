@@ -13,7 +13,7 @@ Output: -1
 
  */
 
-public class LeetCode28ImplementStr {
+public class LeetCode028ImplementStr {
 
 
     // 暴力穷举2

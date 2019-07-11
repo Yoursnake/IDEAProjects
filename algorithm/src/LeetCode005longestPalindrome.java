@@ -1,11 +1,7 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/18.
  */
-public class LeetCode5longestPalindrome {
+public class LeetCode005longestPalindrome {
 
     static int maxLength;
     static String res;

@@ -18,7 +18,7 @@ Output: 1->2->3
  *     ListNode(int x) { val = x; }
  * }
  */
-public class LeetCode83RemoveDuplicatesfromSortedList {
+public class LeetCode083RemoveDuplicatesfromSortedList {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) return head;
 

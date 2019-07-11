@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/4/15.
  */
-public class LeetCode4FindMedianSortedArray {
+public class LeetCode004FindMedianSortedArray {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // 将 nums1 和 nums2 中的数按大小依次放在新数组 combination 中，只放入一半，则 combination 最后的值即为 median
         // 每次找最大值都用不在 order 的数组的值和在 order 的数组的值比较

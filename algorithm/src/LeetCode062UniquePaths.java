@@ -15,7 +15,7 @@ Input: m = 7, n = 3
 Output: 28
  */
 
-public class LeetCode62UniquePaths {
+public class LeetCode062UniquePaths {
 
     public int uniquePaths(int m, int n) {
         // 构造一个矩阵，存储每一格到达终点有多少条路

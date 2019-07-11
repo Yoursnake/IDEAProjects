@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/3/18.
  */
-public class LeetCode13RomanToInt {
+public class LeetCode013RomanToInt {
 
     public static int romanToInt(String s) {
         int sum = 0;

@@ -11,7 +11,7 @@ Input:
 Output: 1->1->2->3->4->4->5->6
  */
 
-public class LeetCode23MergekSortedLists {
+public class LeetCode023MergekSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {
         ArrayList<ListNode> arrayLists = new ArrayList(Arrays.asList(lists));
 

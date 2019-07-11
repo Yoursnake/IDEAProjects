@@ -9,7 +9,7 @@ Example 2:
 Input: dividend = 7, divisor = -3
 Output: -2
  */
-public class LeetCode29DivideTwoIntegers {
+public class LeetCode029DivideTwoIntegers {
     public int divide(int dividend, int divisor) {
         if (divisor == -1 && dividend == Integer.MIN_VALUE) return Integer.MAX_VALUE;
         boolean isCommon = true;

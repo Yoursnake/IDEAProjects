@@ -13,7 +13,7 @@
 
 
 
-public class LeetCode19RemoveNthFromEnd {
+public class LeetCode019RemoveNthFromEnd {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         int count = 0;
         ListNode p = head;

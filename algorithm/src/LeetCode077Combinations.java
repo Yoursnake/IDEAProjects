@@ -18,7 +18,7 @@ Output:
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode77Combinations {
+public class LeetCode077Combinations {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();

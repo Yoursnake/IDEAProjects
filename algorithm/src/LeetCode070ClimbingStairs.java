@@ -17,7 +17,7 @@ Explanation: There are three ways to climb to the top.
 3. 2 steps + 1 step
  */
 
-public class LeetCode70ClimbingStairs {
+public class LeetCode070ClimbingStairs {
     public int climbStairs(int n) {
         int[] result;
         if (n == 1) return 1;

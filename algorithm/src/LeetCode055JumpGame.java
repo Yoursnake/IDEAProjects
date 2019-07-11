@@ -1,4 +1,4 @@
-public class LeetCode55JumpGame {
+public class LeetCode055JumpGame {
     public boolean canJump(int[] nums) {
         if (nums.length == 1) return true;
 

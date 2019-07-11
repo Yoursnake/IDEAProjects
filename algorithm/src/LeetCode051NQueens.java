@@ -17,7 +17,7 @@ Output: [
   ".Q.."]
 ]
  */
-public class LeetCode51NQueens {
+public class LeetCode051NQueens {
     public List<List<String>> solveNQueens(int n) {
         List<String> curr = new ArrayList<>();
         List<List<String>> result = new ArrayList<>();

@@ -11,7 +11,7 @@ Output:
  */
 
 
-public class LeetCode59SpiralMatrixII {
+public class LeetCode059SpiralMatrixII {
     public int[][] generateMatrix(int n) {
         int[][] matrix = new int[n][n];
         int rowPoint = 0;

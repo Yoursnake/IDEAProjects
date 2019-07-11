@@ -1,4 +1,4 @@
-public class LeetCode63UniquePathsII {
+public class LeetCode063UniquePathsII {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int row = obstacleGrid.length;
         int col = obstacleGrid[0].length;

@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LeetCode40CombinationSumII {
+public class LeetCode040CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);    // 开始需要先进行排序
         List<List<Integer>> result = new ArrayList<>();

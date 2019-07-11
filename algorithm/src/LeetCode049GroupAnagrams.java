@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class LeetCode49GroupAnagrams {
+public class LeetCode049GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
         List<List<String>> result = new ArrayList<>();

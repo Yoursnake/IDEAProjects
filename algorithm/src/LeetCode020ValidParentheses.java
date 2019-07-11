@@ -22,7 +22,7 @@ Output: true
 
 import java.util.Stack;
 
-public class LeetCode20ValidParentheses {
+public class LeetCode020ValidParentheses {
 
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();

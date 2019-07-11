@@ -27,7 +27,7 @@ Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class LeetCode98ValidateBinarySearchTree {
+public class LeetCode098ValidateBinarySearchTree {
 //    public boolean isValidBST(TreeNode root) {
 //        List<Integer> list = new ArrayList<>();
 //        preOrderTraversal(list, root);

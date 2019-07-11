@@ -10,7 +10,7 @@ Output: ["255.255.11.135", "255.255.111.35"]
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode93RestoreIPAddresses {
+public class LeetCode093RestoreIPAddresses {
     public List<String> restoreIpAddresses(String s) {
         List<List<String>> ipList = new ArrayList<>();
         List<String> curr = new ArrayList<>();

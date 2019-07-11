@@ -7,7 +7,7 @@ Input: "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
  */
 
-public class LeetCode17PhoneNumber {
+public class LeetCode017PhoneNumber {
     HashMap<Character, String> number = new HashMap<>();
 
     public LeetCode17PhoneNumber() {

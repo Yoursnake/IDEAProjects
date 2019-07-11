@@ -8,7 +8,7 @@ Output: 6
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode42TrappingRainWater {
+public class LeetCode042TrappingRainWater {
     public int trap(int[] height) {
         if (height.length <= 2) return 0;
 

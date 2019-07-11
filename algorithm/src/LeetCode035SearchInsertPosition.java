@@ -19,7 +19,7 @@ Example 4:
 Input: [1,3,5,6], 0
 Output: 0
  */
-public class LeetCode35SearchInsertPosition {
+public class LeetCode035SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
         int end = nums.length - 1;
         int index = findTarget(nums, target, 0, end);

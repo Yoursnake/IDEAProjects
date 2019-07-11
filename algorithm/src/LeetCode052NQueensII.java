@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode52NQueensII {
+public class LeetCode052NQueensII {
     public int totalNQueens(int n) {
         List<String> curr = new ArrayList<>();
         List<List<String>> result = new ArrayList<>();

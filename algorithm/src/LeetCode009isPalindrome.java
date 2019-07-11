@@ -1,7 +1,7 @@
 /**
  * Created by shengliyi on 2017/3/16.
  */
-public class LeetCode9isPalindrome {
+public class LeetCode009isPalindrome {
 
     public boolean isPalindrome(int x) {
         int temp = x,count = 0;     // count表示位数

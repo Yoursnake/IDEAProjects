@@ -16,7 +16,7 @@ Output:
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode46Permutations {
+public class LeetCode046Permutations {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();

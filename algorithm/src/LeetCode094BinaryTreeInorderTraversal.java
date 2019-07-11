@@ -25,7 +25,7 @@ import java.util.List;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class LeetCode94BinaryTreeInorderTraversal {
+public class LeetCode094BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         inOrder(result, root);

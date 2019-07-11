@@ -1,4 +1,4 @@
-public class LeetCode66PlusOne {
+public class LeetCode066PlusOne {
     public int[] plusOne(int[] digits) {
         int len = digits.length;
         int curr = digits[len - 1] + 1;

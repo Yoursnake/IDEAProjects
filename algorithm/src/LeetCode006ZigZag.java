@@ -9,7 +9,7 @@ Y A   H R
 P     I
  */
 
-public class LeetCode6ZigZag {
+public class LeetCode006ZigZag {
     public String convert(String s, int numRows) {
         int point = 0;
         int len = s.length();

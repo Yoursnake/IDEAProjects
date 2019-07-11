@@ -35,7 +35,7 @@ Output: "/a/b/c"
 
 import java.util.Stack;
 
-public class LeetCode71SimplifyPath {
+public class LeetCode071SimplifyPath {
     public String simplifyPath(String path) {
         String[] ss = path.split("/");
         Stack<String> stack = new Stack<>();

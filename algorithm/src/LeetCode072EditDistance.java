@@ -19,7 +19,7 @@ exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
  */
 
-public class LeetCode72EditDistance {
+public class LeetCode072EditDistance {
 
     // 动态规划
     public int minDistance(String word1, String word2) {

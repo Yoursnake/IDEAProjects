@@ -13,7 +13,7 @@ Output: "2314"
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode60PermutationSequence {
+public class LeetCode060PermutationSequence {
 //    // 方法1 : 回溯法找出所有字符串，然后找第 k 个
 //    public String getPermutation(int n, int k) {
 //        List<Character> nums = new ArrayList<>();

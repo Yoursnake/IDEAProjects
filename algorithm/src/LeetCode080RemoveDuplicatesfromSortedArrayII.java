@@ -16,7 +16,7 @@ Your function should return length = 7, with the first seven elements of nums be
 It doesn't matter what values are set beyond the returned length.
  */
 
-public class LeetCode80RemoveDuplicatesfromSortedArrayII {
+public class LeetCode080RemoveDuplicatesfromSortedArrayII {
     public int removeDuplicates(int[] nums) {
         if (nums.length <= 1) return nums.length;
 

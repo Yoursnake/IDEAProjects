@@ -17,7 +17,7 @@ Given word = "SEE", return true.
 Given word = "ABCB", return false.
  */
 
-public class LeetCode79WordSearch {
+public class LeetCode079WordSearch {
 //    public boolean exist(char[][] board, String word) {
 //        int row = board.length;
 //        int col = board[0].length;

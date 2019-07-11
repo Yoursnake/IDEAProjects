@@ -35,7 +35,7 @@ rotate the input matrix in-place such that it becomes:
 
  */
 
-public class LeetCode48RotateImage {
+public class LeetCode048RotateImage {
 //    public void rotate(int[][] matrix) {
 //        int sideLen = matrix.length;
 //        int rotateNum = sideLen / 2;

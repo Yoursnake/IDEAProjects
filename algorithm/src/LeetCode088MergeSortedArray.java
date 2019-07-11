@@ -8,7 +8,7 @@ nums2 = [2,5,6],       n = 3
 Output: [1,2,2,3,5,6]
  */
 
-public class LeetCode88MergeSortedArray {
+public class LeetCode088MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int len = nums1.length;
         int[] tempNums = new int[len];

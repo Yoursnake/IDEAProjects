@@ -1,4 +1,4 @@
-public class LeetCode64MinimumPathSum {
+public class LeetCode064MinimumPathSum {
     // 动态规划
     public int minPathSum(int[][] grid) {
         int row = grid.length;

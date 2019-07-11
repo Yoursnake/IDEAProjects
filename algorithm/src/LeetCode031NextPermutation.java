@@ -4,7 +4,7 @@
 1,1,5 → 1,5,1
 */
 
-public class LeetCode31NextPermutation {
+public class LeetCode031NextPermutation {
     public void nextPermutation(int[] nums) {
         int dsIndex = 0;
         int gtIndex = 0;

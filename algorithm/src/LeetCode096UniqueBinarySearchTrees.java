@@ -16,7 +16,7 @@ Given n = 3, there are a total of 5 unique BST's:
 
  */
 
-public class LeetCode96UniqueBinarySearchTrees {
+public class LeetCode096UniqueBinarySearchTrees {
 
     // dp 做法
     public int numTrees(int n) {

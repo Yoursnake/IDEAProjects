@@ -21,7 +21,7 @@ matrix = [
 target = 13
 Output: false
  */
-public class LeetCode74Searcha2DMatrix {
+public class LeetCode074Searcha2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
 
         int row = matrix.length;

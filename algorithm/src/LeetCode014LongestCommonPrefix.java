@@ -11,7 +11,7 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
  */
 
-public class LeetCode14LongestCommonPrefix {
+public class LeetCode014LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";

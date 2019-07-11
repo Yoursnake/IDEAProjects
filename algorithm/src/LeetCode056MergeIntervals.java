@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class LeetCode56MergeIntervals {
+public class LeetCode056MergeIntervals {
     public List<Interval> merge(List<Interval> intervals) {
 
         if (intervals.size() <= 1) return intervals;

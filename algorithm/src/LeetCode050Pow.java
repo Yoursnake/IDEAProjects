@@ -14,7 +14,7 @@ Output: 0.25000
 Explanation: 2-2 = 1/22 = 1/4 = 0.25
  */
 
-public class LeetCode50Pow {
+public class LeetCode050Pow {
     public double myPow(double x, int n) {
         double result = x;
         if (n == 0) {

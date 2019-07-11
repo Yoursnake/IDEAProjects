@@ -1,4 +1,4 @@
-public class LeetCode67AddBinary {
+public class LeetCode067AddBinary {
     public String addBinary(String a, String b) {
         String num1;
         String num2;
