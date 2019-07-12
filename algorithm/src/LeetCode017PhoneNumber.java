@@ -10,7 +10,7 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 public class LeetCode017PhoneNumber {
     HashMap<Character, String> number = new HashMap<>();
 
-    public LeetCode17PhoneNumber() {
+    public LeetCode017PhoneNumber() {
         number.put('2', "abc");
         number.put('3', "def");
         number.put('4', "ghi");

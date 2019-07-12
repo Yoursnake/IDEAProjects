@@ -4,7 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-
+        int[] nums = {1, 2, 3, 1};
+        int result = new LeetCode162FindPeakElement().findPeakElement(nums);
+        System.out.println(result);
     }
 
     public static void printLinkedList(LeetCode148SortList.ListNode node) {
