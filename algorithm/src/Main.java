@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1,10000000};
-        int result = new LeetCode164MaximumGap().maximumGap(nums);
+        int n = 701;
+        String result = new LeetCode168ExcelSheetColumnTitle().convertToTitle(52);
         System.out.println(result);
     }
 
