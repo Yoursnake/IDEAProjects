@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 1};
-        int result = new LeetCode162FindPeakElement().findPeakElement(nums);
+        int[] nums = {1,10000000};
+        int result = new LeetCode164MaximumGap().maximumGap(nums);
         System.out.println(result);
     }
 
