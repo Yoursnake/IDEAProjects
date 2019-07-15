@@ -4,9 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        int n = 701;
-        String result = new LeetCode168ExcelSheetColumnTitle().convertToTitle(52);
-        System.out.println(result);
+        int[] nums = {2,2,1,1,1,2,2};
+        new LeetCode169MajorityElement().quickSort(nums, 0, nums.length - 1);
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + "\t");
+        }
     }
 
     public static void printLinkedList(LeetCode148SortList.ListNode node) {
