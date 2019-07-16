@@ -4,11 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2,2,1,1,1,2,2};
-        new LeetCode169MajorityElement().quickSort(nums, 0, nums.length - 1);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + "\t");
-        }
+        String version1 = "1.0";
+        String version2 = "1.0.0";
+
+        int result = new LeetCode165CompareVersionNumbers().compareVersion(version1, version2);
+        System.out.println(result);
     }
 
     public static void printLinkedList(LeetCode148SortList.ListNode node) {
