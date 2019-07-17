@@ -4,10 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        String version1 = "1.0";
-        String version2 = "1.0.0";
+        int numerator = -2147483648, denominator = 1;
 
-        int result = new LeetCode165CompareVersionNumbers().compareVersion(version1, version2);
+        String result = new LeetCode166FractiontoRecurringDecimal().fractionToDecimal(numerator, denominator);
         System.out.println(result);
     }
 
