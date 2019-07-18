@@ -4,9 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int numerator = -2147483648, denominator = 1;
-
-        String result = new LeetCode166FractiontoRecurringDecimal().fractionToDecimal(numerator, denominator);
+        String s = "ZY";
+        int result = new LeetCode171ExcelSheetColumnNumber().titleToNumber(s);
         System.out.println(result);
     }
 
