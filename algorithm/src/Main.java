@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        String s = "ZY";
-        int result = new LeetCode171ExcelSheetColumnNumber().titleToNumber(s);
+        int n = 1808548329;
+        int result = new LeetCode172FactorialTrailingZeroes().trailingZeroes(n);
         System.out.println(result);
     }
 
