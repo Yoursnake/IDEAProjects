@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int n = 1808548329;
-        int result = new LeetCode172FactorialTrailingZeroes().trailingZeroes(n);
+        int[][] dungeon = {{-2, -3, 3}, {-5, -10, 1}, {10, 30, -5}};
+        int result = new LeetCode174DungeonGame().calculateMinimumHP(dungeon);
         System.out.println(result);
     }
 
