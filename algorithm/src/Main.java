@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[][] dungeon = {{-2, -3, 3}, {-5, -10, 1}, {10, 30, -5}};
-        int result = new LeetCode174DungeonGame().calculateMinimumHP(dungeon);
+        int[] nums = {3,30,34,5,9};
+        String result = new LeetCode179LargestNumber().largestNumber(nums);
         System.out.println(result);
     }
 
