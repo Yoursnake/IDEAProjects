@@ -19,30 +19,52 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class LeetCode179LargestNumber {
+//    public String largestNumber(int[] nums) {
+//        Integer[] arr = new Integer[nums.length];
+//        for (int i = 0; i < nums.length; i++) {
+//            arr[i] = nums[i];
+//        }
+//
+//        Arrays.sort(arr, new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer o1, Integer o2) {
+//                int l1 = (o1 == 0) ? 1 : (int) (Math.log10(o1) + 1);
+//                int l2 = (o2 == 0) ? 1 : (int) (Math.log10(o2) + 1);
+//
+//                if (o1 * Math.pow(10, l2) + o2 > o2 * Math.pow(10, l1) + o1) return -1;
+//                else if (o1 * Math.pow(10, l2) + o2 < o2 * Math.pow(10, l1) + o1) return 1;
+//                else return 0;
+//            }
+//        });
+//
+//        StringBuilder sb = new StringBuilder();
+//        for (Integer anArr : arr) {
+//            sb.append(anArr);
+//        }
+//
+//        return (sb.charAt(0) == '0') ? "0" : sb.toString();
+//    }
+
     public String largestNumber(int[] nums) {
-        Integer[] arr = new Integer[nums.length];
+        String[] arr = new String[nums.length];
+
         for (int i = 0; i < nums.length; i++) {
-            arr[i] = nums[i];
+            arr[i] = String.valueOf(nums[i]);
         }
 
-        Arrays.sort(arr, new Comparator<Integer>() {
+        Arrays.sort(arr, new Comparator<String>() {
             @Override
-            public int compare(Integer o1, Integer o2) {
-                int l1 = (o1 == 0) ? 1 : (int) (Math.log10(o1) + 1);
-                int l2 = (o2 == 0) ? 1 : (int) (Math.log10(o2) + 1);
-
-                if (o1 * Math.pow(10, l2) + o2 > o2 * Math.pow(10, l1) + o1) return -1;
-                else if (o1 * Math.pow(10, l2) + o2 < o2 * Math.pow(10, l1) + o1) return 1;
-                else return 0;
+            public int compare(String o1, String o2) {
+                return -(o1 + o2).compareTo(o2 + o1);
             }
         });
 
+        if (arr[0].equals("0")) return "0";
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < arr.length; i++) {
-            sb.append(arr[i]);
+        for (String s : arr) {
+            sb.append(s);
         }
 
-        String result = sb.toString();
-        return (result.charAt(0) == '0') ? "0" : result;
+        return sb.toString();
     }
 }
