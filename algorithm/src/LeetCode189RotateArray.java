@@ -24,22 +24,38 @@ least 3 different ways to solve this problem.
 Could you do it in-place with O(1) extra space?
  */
 
-import java.util.LinkedList;
-
 public class LeetCode189RotateArray {
+
+//    // 100% time O(n) space O(k)
+//    public void rotate(int[] nums, int k) {
+//        int numsLen = nums.length;
+//        int[] temp = new int[k];  // 用于存储需要移到前面的数组
+//        k = k % (nums.length);
+//
+//        int tempIndex = 0;
+//        for (int i = numsLen - k; i < numsLen; i++) {
+//            temp[tempIndex++] = nums[i];
+//        }
+//
+//        for (int i = numsLen - 1; i >= k; i--) {
+//            nums[i] = nums[i - k];    // 将前面一段数组往后移
+//        }
+//
+//        for (int i = 0; i < k; i++) {
+//            nums[i] = temp[i];
+//        }
+//    }
+
+    // time O(n^2) space O(1)
     public void rotate(int[] nums, int k) {
-        LinkedList<Integer> list = new LinkedList<>();
+        k = k % nums.length;
 
-        for (int i = 0; i < nums.length - k; i++) {
-            list.add(nums[i]);
-        }
-
-        for (int i = nums.length - 1; i >= nums.length - k; i++) {
-            list.add(0, nums[i]);
-        }
-
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = list.get(i);
+        for (int i = 0; i < k; i++) {
+            int currNum = nums[nums.length - 1];
+            for (int j = nums.length - 1; j >= 1; j--) {
+                nums[j] = nums[j - 1];
+            }
+            nums[0] = currNum;
         }
     }
 }
