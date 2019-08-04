@@ -26,36 +26,36 @@ Could you do it in-place with O(1) extra space?
 
 public class LeetCode189RotateArray {
 
-//    // 100% time O(n) space O(k)
-//    public void rotate(int[] nums, int k) {
-//        int numsLen = nums.length;
-//        int[] temp = new int[k];  // 用于存储需要移到前面的数组
-//        k = k % (nums.length);
-//
-//        int tempIndex = 0;
-//        for (int i = numsLen - k; i < numsLen; i++) {
-//            temp[tempIndex++] = nums[i];
-//        }
-//
-//        for (int i = numsLen - 1; i >= k; i--) {
-//            nums[i] = nums[i - k];    // 将前面一段数组往后移
-//        }
-//
-//        for (int i = 0; i < k; i++) {
-//            nums[i] = temp[i];
-//        }
-//    }
-
-    // time O(n^2) space O(1)
+    // 100% time O(n) space O(k)
     public void rotate(int[] nums, int k) {
-        k = k % nums.length;
+        int numsLen = nums.length;
+        int[] temp = new int[k];  // 用于存储需要移到前面的数组
+        k = k % (nums.length);
+
+        int tempIndex = 0;
+        for (int i = numsLen - k; i < numsLen; i++) {
+            temp[tempIndex++] = nums[i];
+        }
+
+        for (int i = numsLen - 1; i >= k; i--) {
+            nums[i] = nums[i - k];    // 将前面一段数组往后移
+        }
 
         for (int i = 0; i < k; i++) {
-            int currNum = nums[nums.length - 1];
-            for (int j = nums.length - 1; j >= 1; j--) {
-                nums[j] = nums[j - 1];
-            }
-            nums[0] = currNum;
+            nums[i] = temp[i];
         }
     }
+
+//    // time O(n^2) space O(1)
+//    public void rotate(int[] nums, int k) {
+//        k = k % nums.length;
+//
+//        for (int i = 0; i < k; i++) {
+//            int currNum = nums[nums.length - 1];
+//            for (int j = nums.length - 1; j >= 1; j--) {
+//                nums[j] = nums[j - 1];
+//            }
+//            nums[0] = currNum;
+//        }
+//    }
 }
