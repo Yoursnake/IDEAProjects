@@ -1,13 +1,11 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
     public static void main(String[] args) {
-        String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
-        List<String> result = new LeetCode187RepeatedDNASequences().findRepeatedDnaSequences(s);
+        int n = 0b11111111111111111111111111111101;
+        int result = new LeetCode190ReverseBits().reverseBits(n);
         System.out.println(result);
     }
 
