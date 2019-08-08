@@ -4,8 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        int n = 0b11111111111111111111111111111101;
-        int result = new LeetCode191Numberof1Bits().hammingWeight(n);
+        int[] nums = {2,7,9,3,1};
+        int result = new LeetCode198HouseRobber().rob(nums);
         System.out.println(result);
     }
 
