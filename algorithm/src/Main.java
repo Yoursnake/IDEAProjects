@@ -4,14 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        char[][] grid = {
-                {'1', '1', '0', '0', '0'},
-                {'1', '1', '0', '0', '0'},
-                {'0', '0', '1', '0', '0'},
-                {'0', '0', '0', '1', '1'}
-        };
+        int m = 5, n = 7;
 
-        int result = new LeetCode200NumberofIslands().numIslands(grid);
+        int result = new LeetCode201BitwiseANDofNumbersRange().rangeBitwiseAnd(m, n);
         System.out.println(result);
     }
 
