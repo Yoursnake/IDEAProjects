@@ -4,8 +4,14 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2,7,9,3,1};
-        int result = new LeetCode198HouseRobber().rob(nums);
+        char[][] grid = {
+                {'1', '1', '0', '0', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '1', '1'}
+        };
+
+        int result = new LeetCode200NumberofIslands().numIslands(grid);
         System.out.println(result);
     }
 
