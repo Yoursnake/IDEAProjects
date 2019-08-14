@@ -4,9 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        int m = 5, n = 7;
+        int n = 22;
 
-        int result = new LeetCode201BitwiseANDofNumbersRange().rangeBitwiseAnd(m, n);
+        boolean result = new LeetCode202HappyNumber().isHappy(n);
         System.out.println(result);
     }
 
