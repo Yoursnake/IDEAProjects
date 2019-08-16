@@ -4,11 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 6, 3, 4, 5, 6};
-        LeetCode203RemoveLinkedListElements.ListNode head = linkedListGiveValue(nums);
-        LeetCode203RemoveLinkedListElements.ListNode result = new LeetCode203RemoveLinkedListElements().removeElements(head, 6);
-//        System.out.println(result);
-        printLinkedList(result);
+        int n = 10;
+        int result = new LeetCode204CountPrimes().countPrimes(n);
+        System.out.println(result);
     }
 
     public static void printLinkedList(LeetCode203RemoveLinkedListElements.ListNode node) {
