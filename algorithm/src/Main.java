@@ -4,8 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        int n = 10;
-        int result = new LeetCode204CountPrimes().countPrimes(n);
+        String s = "ab";
+        String t = "aa";
+        boolean result = new LeetCode205IsomorphicStrings().isIsomorphic(s, t);
         System.out.println(result);
     }
 
