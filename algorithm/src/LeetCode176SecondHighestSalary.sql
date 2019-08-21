@@ -20,11 +20,11 @@ highest salary, then the query should return null.
 +---------------------+
  */
 
--- Create table If Not Exists Employee (Id int, Salary int);
--- Truncate table Employee;
--- insert into Employee (Id, Salary) values ('1', '100');
--- insert into Employee (Id, Salary) values ('2', '200');
--- insert into Employee (Id, Salary) values ('3', '300');
+Create table If Not Exists Employee (Id int, Salary int);
+Truncate table Employee;
+insert into Employee (Id, Salary) values ('1', '100');
+insert into Employee (Id, Salary) values ('2', '200');
+insert into Employee (Id, Salary) values ('3', '300');
 
 -- 方法1
 SELECT MAX(Salary) AS SecondHighestSalary

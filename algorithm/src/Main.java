@@ -4,13 +4,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        String s = "ab";
-        String t = "aa";
-        boolean result = new LeetCode205IsomorphicStrings().isIsomorphic(s, t);
-        System.out.println(result);
+        int[] nums = {1, 2, 3, 4, 5};
+        LeetCode206ReverseLinkedList.ListNode head = linkedListGiveValue(nums);
+        LeetCode206ReverseLinkedList.ListNode result = new LeetCode206ReverseLinkedList().reverseList(head);
+        printLinkedList(result);
     }
 
-    public static void printLinkedList(LeetCode203RemoveLinkedListElements.ListNode node) {
+    public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
         while (node != null) {
             System.out.print(node.val);
             if (node.next != null) System.out.print("-->");
@@ -20,12 +20,12 @@ public class Main {
         System.out.println();
     }
 
-    public static LeetCode203RemoveLinkedListElements.ListNode linkedListGiveValue(int[] nums) {
-        LeetCode203RemoveLinkedListElements.ListNode head = new LeetCode203RemoveLinkedListElements.ListNode(nums[0]);
-        LeetCode203RemoveLinkedListElements.ListNode a = head;
+    public static LeetCode206ReverseLinkedList.ListNode linkedListGiveValue(int[] nums) {
+        LeetCode206ReverseLinkedList.ListNode head = new LeetCode206ReverseLinkedList.ListNode(nums[0]);
+        LeetCode206ReverseLinkedList.ListNode a = head;
 
         for (int i = 1; i < nums.length; i++) {
-            a.next = new LeetCode203RemoveLinkedListElements.ListNode(nums[i]);
+            a.next = new LeetCode206ReverseLinkedList.ListNode(nums[i]);
             a = a.next;
         }
 
