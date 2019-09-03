@@ -4,10 +4,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 5};
-        LeetCode206ReverseLinkedList.ListNode head = linkedListGiveValue(nums);
-        LeetCode206ReverseLinkedList.ListNode result = new LeetCode206ReverseLinkedList().reverseList(head);
-        printLinkedList(result);
+        int numCourses = 3;
+        int[][] prerequisites = {{1, 0},{2,0},{0,2}};
+        boolean res = new LeetCode207CourseSchedule().canFinish(numCourses, prerequisites);
+        System.out.println(res);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
