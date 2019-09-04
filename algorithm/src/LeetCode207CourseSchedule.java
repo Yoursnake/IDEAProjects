@@ -32,53 +32,97 @@ You may assume that there are no duplicate edges in the input prerequisites.
  */
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class LeetCode207CourseSchedule {
     class Graph {
         int indegree;
         List<Integer> list;
+
+        public Graph() {
+            this.indegree = 0;
+            this.list = new ArrayList<>();
+        }
     }
 
-    // topological sort + bfs: 76%
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
+//    // topological sort + BFS: 76%
+//    // 开始先找入度为 0 的所有节点入队，然后依次出队，每次出队计数，
+//    // 出队时让出队节点连接的节点入度依次减 1，如果减 1 后入度为 0 则加入队列。
+//    // 最后如果出队的节点数等于总共的节点数则证明 DAG（有向无环图）
+//    public boolean canFinish(int numCourses, int[][] prerequisites) {
+//
+//        Graph[] graph = new Graph[numCourses];
+//
+//        for (int i = 0; i < numCourses; i++) {
+//            graph[i] = new Graph();
+//        }
+//
+//        for (int i = 0; i < prerequisites.length; i++) {
+//            int course = prerequisites[i][1];
+//            int prerequisite = prerequisites[i][0];
+//
+//            graph[course].list.add(prerequisite);
+//            graph[prerequisite].indegree++;
+//        }
+//
+//        Queue<Graph> queue = new LinkedList<>();
+//
+//        for (int i = 0; i < numCourses; i++) {
+//            if (graph[i].indegree == 0)
+//                queue.offer(graph[i]);
+//        }
+//
+//        int count = 0;
+//        while (!queue.isEmpty()) {
+//            Graph curr = queue.poll();
+//            count++;
+//
+//            for (int node : curr.list) {
+//                graph[node].indegree--;
+//                if (graph[node].indegree == 0) queue.offer(graph[node]);
+//            }
+//        }
+//
+//        return count == numCourses;
+//    }
 
-        Graph[] graph = new Graph[numCourses];
+    // DFS: 89.91%
+    // visited 0 表示未访问，-1 表示正在访问，1 表示已经访问过
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Graph[] graphs = new Graph[numCourses];
+        int[] visited = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
-            graph[i] = new Graph();
-            graph[i].indegree = 0;
-            graph[i].list = new ArrayList<>();
+            graphs[i] = new Graph();
         }
 
         for (int i = 0; i < prerequisites.length; i++) {
             int course = prerequisites[i][1];
             int prerequisite = prerequisites[i][0];
 
-            graph[course].list.add(prerequisite);
-            graph[prerequisite].indegree++;
+            graphs[course].list.add(prerequisite);
+            graphs[prerequisite].indegree++;
         }
-
-        Queue<Graph> queue = new LinkedList<>();
 
         for (int i = 0; i < numCourses; i++) {
-            if (graph[i].indegree == 0)
-                queue.offer(graph[i]);
+            if (!DFS(graphs, visited, i)) return false;
         }
 
-        int count = 0;
-        while (!queue.isEmpty()) {
-            Graph curr = queue.poll();
-            count++;
+        return true;
+    }
 
-            for (int node : curr.list) {
-                graph[node].indegree--;
-                if (graph[node].indegree == 0) queue.offer(graph[node]);
-            }
+    private boolean DFS(Graph[] graphs, int[] visited, int entrance) {
+        // 如果已经访问，证明这个节点以后都没有环
+        // 如果正在访问中，这次访问表示重复访问，即存在环
+        if (visited[entrance] == 1) return true;
+        if (visited[entrance] == -1) return false;
+
+        visited[entrance] = -1;
+        for (int node : graphs[entrance].list) {
+            if (!DFS(graphs, visited, node)) return false;
         }
+        visited[entrance] = 1;
 
-        return count == numCourses;
+        return true;
     }
 }
