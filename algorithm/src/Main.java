@@ -4,10 +4,16 @@
 
 public class Main {
     public static void main(String[] args) {
-        int numCourses = 3;
-        int[][] prerequisites = {{1, 0},{2,0},{0,2}};
-        boolean res = new LeetCode207CourseSchedule().canFinish(numCourses, prerequisites);
-        System.out.println(res);
+        LeetCode208ImplementTrie trie = new LeetCode208ImplementTrie();
+        trie.insert("app");
+        trie.insert("apple");
+//        System.out.println(trie.search("apple"));
+//        System.out.println(trie.search("app"));
+//        System.out.println(trie.startsWith("app"));
+//        trie.insert("app");
+//        System.out.println(trie.search("app"));
+//        System.out.println(trie.search("apps"));
+        System.out.println(trie.search("app"));
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
