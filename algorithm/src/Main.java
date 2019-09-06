@@ -4,16 +4,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        LeetCode208ImplementTrie trie = new LeetCode208ImplementTrie();
-        trie.insert("app");
-        trie.insert("apple");
-//        System.out.println(trie.search("apple"));
-//        System.out.println(trie.search("app"));
-//        System.out.println(trie.startsWith("app"));
-//        trie.insert("app");
-//        System.out.println(trie.search("app"));
-//        System.out.println(trie.search("apps"));
-        System.out.println(trie.search("app"));
+        int s = 15;
+        int[] nums = {1,2,3,4,5};
+        int result = new LeetCode209MinimumSizeSubarraySum().minSubArrayLen(s, nums);
+        System.out.println(result);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
