@@ -58,8 +58,8 @@ public class LeetCode207CourseSchedule {
 //        }
 //
 //        for (int i = 0; i < prerequisites.length; i++) {
-//            int course = prerequisites[i][1];
-//            int prerequisite = prerequisites[i][0];
+//            int course = prerequisites[i][0];
+//            int prerequisite = prerequisites[i][1];
 //
 //            graph[course].list.add(prerequisite);
 //            graph[prerequisite].indegree++;
@@ -97,8 +97,8 @@ public class LeetCode207CourseSchedule {
         }
 
         for (int i = 0; i < prerequisites.length; i++) {
-            int course = prerequisites[i][1];
-            int prerequisite = prerequisites[i][0];
+            int course = prerequisites[i][0];
+            int prerequisite = prerequisites[i][1];
 
             graphs[course].list.add(prerequisite);
             graphs[prerequisite].indegree++;

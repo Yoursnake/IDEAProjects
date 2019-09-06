@@ -4,10 +4,15 @@
 
 public class Main {
     public static void main(String[] args) {
-        int s = 15;
-        int[] nums = {1,2,3,4,5};
-        int result = new LeetCode209MinimumSizeSubarraySum().minSubArrayLen(s, nums);
-        System.out.println(result);
+        int numCourses = 4;
+        int[][] prerequisites = {{1, 0}, {2, 0}, {3, 1}, {3, 2}};
+//        int numCourses = 2;
+//        int[][] prerequisites = {{1, 0}};
+        int[] result = new LeetCode210CourseScheduleII().findOrder(numCourses, prerequisites);
+
+        for (int i : result) {
+            System.out.print(i + "\t");
+        }
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
