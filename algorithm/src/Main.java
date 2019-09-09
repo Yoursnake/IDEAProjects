@@ -4,15 +4,17 @@
 
 public class Main {
     public static void main(String[] args) {
-        int numCourses = 4;
-        int[][] prerequisites = {{1, 0}, {2, 0}, {3, 1}, {3, 2}};
-//        int numCourses = 2;
-//        int[][] prerequisites = {{1, 0}};
-        int[] result = new LeetCode210CourseScheduleII().findOrder(numCourses, prerequisites);
+        LeetCode211AddandSearchWord obj = new LeetCode211AddandSearchWord();
+        obj.addWord("at");
+        obj.addWord("and");
+        obj.addWord("an");
+        obj.addWord("a");
 
-        for (int i : result) {
-            System.out.print(i + "\t");
-        }
+        System.out.println(obj.search(".at"));
+        obj.addWord("bat");
+        System.out.println(obj.search(".at"));
+//        System.out.println(obj.search(".ad"));
+//        System.out.println(obj.search("b.."));
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
