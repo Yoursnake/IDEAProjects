@@ -4,17 +4,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        LeetCode211AddandSearchWord obj = new LeetCode211AddandSearchWord();
-        obj.addWord("at");
-        obj.addWord("and");
-        obj.addWord("an");
-        obj.addWord("a");
-
-        System.out.println(obj.search(".at"));
-        obj.addWord("bat");
-        System.out.println(obj.search(".at"));
-//        System.out.println(obj.search(".ad"));
-//        System.out.println(obj.search("b.."));
+        int[] nums = {4,1,2,7,5,3,1};
+        int res = new LeetCode213HouseRobberII().rob(nums);
+        System.out.println(res);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
