@@ -1,11 +1,20 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {4,1,2,7,5,3,1};
-        int res = new LeetCode213HouseRobberII().rob(nums);
+        char[][] board = {
+                {'o', 'a', 'a', 'n'},
+                {'e', 't', 'a', 'e'},
+                {'i', 'h', 'k', 'r'},
+                {'i', 'f', 'l', 'v'}
+        };
+        String[] words = {"oath", "pea", "eat", "rain"};
+
+        List<String> res = new LeetCode212WordSearchII().findWords(board, words);
         System.out.println(res);
     }
 
