@@ -14,7 +14,7 @@ public class QuickSort {
     private int partition(int[] nums, int left, int right) {
 
         int key = nums[left];
-        int lPoint = left + 1;
+        int lPoint = left;
         int rPoint = right;
 
         while (lPoint < rPoint) {

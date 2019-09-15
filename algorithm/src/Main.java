@@ -1,20 +1,18 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
     public static void main(String[] args) {
-        char[][] board = {
-                {'o', 'a', 'a', 'n'},
-                {'e', 't', 'a', 'e'},
-                {'i', 'h', 'k', 'r'},
-                {'i', 'f', 'l', 'v'}
-        };
-        String[] words = {"oath", "pea", "eat", "rain"};
+//        int[] nums = {3,2,3,1,2,4,5,5,6};
+//        int k = 4;
+//        int[] nums = {-1, 2, 0};
+//        int k = 1;
 
-        List<String> res = new LeetCode212WordSearchII().findWords(board, words);
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        int k = 2;
+
+        int res = new LeetCode215KthLargestElementInAnArray().findKthLargest(nums, k);
         System.out.println(res);
     }
 
