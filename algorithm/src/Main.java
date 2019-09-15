@@ -9,10 +9,12 @@ public class Main {
 //        int[] nums = {-1, 2, 0};
 //        int k = 1;
 
-        int[] nums = {3, 2, 1, 5, 6, 4};
-        int k = 2;
+        String s = "aabba";
 
-        int res = new LeetCode215KthLargestElementInAnArray().findKthLargest(nums, k);
+//        StringBuilder sb = new StringBuilder(s);
+//        System.out.println(sb.append(sb.reverse()).toString());
+
+        String res = new LeetCode214ShortestPalindrome().shortestPalindrome(s);
         System.out.println(res);
     }
 
