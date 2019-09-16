@@ -52,7 +52,7 @@ public class LeetCode164MaximumGap {
 
         if (minVal == maxVal) return 0;
 
-        // 桶的长度和桶的数量
+        // 桶的长度和桶的数量，桶长：将 nums 中元素从 min 到 max 平均分布的长度
         int bucketLen = (int)Math.ceil((maxVal - minVal) * 1.0 / (nums.length - 1));
         int bucketNum = (maxVal - minVal)/ bucketLen + 1;
 
