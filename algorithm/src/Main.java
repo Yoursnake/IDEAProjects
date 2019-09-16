@@ -1,20 +1,14 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
     public static void main(String[] args) {
-//        int[] nums = {3,2,3,1,2,4,5,5,6};
-//        int k = 4;
-//        int[] nums = {-1, 2, 0};
-//        int k = 1;
+        int k = 3, n = 9;
 
-        String s = "aabba";
-
-//        StringBuilder sb = new StringBuilder(s);
-//        System.out.println(sb.append(sb.reverse()).toString());
-
-        String res = new LeetCode214ShortestPalindrome().shortestPalindrome(s);
+        List<List<Integer>> res = new LeetCode216CombinationSumIII().combinationSum3(k, n);
         System.out.println(res);
     }
 
