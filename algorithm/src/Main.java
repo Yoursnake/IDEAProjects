@@ -1,14 +1,14 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
-    public static void main(String[] args) {
-        int k = 3, n = 9;
 
-        List<List<Integer>> res = new LeetCode216CombinationSumIII().combinationSum3(k, n);
+    public static void main(String[] args) {
+        int[] nums = {2147483647,-2147483647};
+        int k = 1, t = 2147483647;
+
+        boolean res = new LeetCode220ContainsDuplicateIII().containsNearbyAlmostDuplicate(nums, k, t);
         System.out.println(res);
     }
 
