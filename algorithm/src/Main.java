@@ -5,10 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {2147483647,-2147483647};
-        int k = 1, t = 2147483647;
+        int A = -3, B = 0, C = 3, D = 4, E = 0, F = -1, G = 9, H = 2;
 
-        boolean res = new LeetCode220ContainsDuplicateIII().containsNearbyAlmostDuplicate(nums, k, t);
+        int res = new LeetCode223RectangleArea().computeArea(A, B, C, D, E, F, G, H);
         System.out.println(res);
     }
 
