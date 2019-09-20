@@ -5,9 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        String s = "2-1 + 2";
+        String s = "0-2147483647";
 
-        int res = new LeetCode224BasicCalculator().calculate(s);
+        int res = new LeetCode227BasicCalculatorII().calculate(s);
         System.out.println(res);
     }
 
