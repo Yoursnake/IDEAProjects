@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -5,14 +7,15 @@
 public class Main {
 
     public static void main(String[] args) {
-//        String s = "0-2147483647";
-//        int res = new LeetCode227BasicCalculatorII().calculate(s);
-//        System.out.println(res);
+        int[] nums = {-2147483648, -2147483647, 2147483647};
+        List<String> res = new LeetCode228SummaryRanges().summaryRanges(nums);
+        System.out.println(res);
 
-        Integer[] arr = {5, 2, 4, 1, 2, 5, 6, 2, 10};
-        MaxHeap<Integer> maxHeap = new MaxHeap<>(arr);
-        System.out.println(maxHeap.findMax());
-        maxHeap.printHeap();
+
+//        Integer[] arr = {5, 2, 4, 1, 2, 5, 6, 2, 10};
+//        MaxHeap<Integer> maxHeap = new MaxHeap<>(arr);
+//        System.out.println(maxHeap.findMax());
+//        maxHeap.printHeap();
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
