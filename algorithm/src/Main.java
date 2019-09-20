@@ -5,10 +5,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        String s = "0-2147483647";
+//        String s = "0-2147483647";
+//        int res = new LeetCode227BasicCalculatorII().calculate(s);
+//        System.out.println(res);
 
-        int res = new LeetCode227BasicCalculatorII().calculate(s);
-        System.out.println(res);
+        Integer[] arr = {5, 2, 4, 1, 2, 5, 6, 2, 10};
+        MaxHeap<Integer> maxHeap = new MaxHeap<>(arr);
+        System.out.println(maxHeap.findMax());
+        maxHeap.printHeap();
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
