@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        int[][] buildings = {{2, 9, 10}, {3, 7, 15}, {5, 12, 12}, {15, 20, 10}, {19, 24, 8}};
-        List<List<Integer>> res = new LeetCode218TheSkylineProblem().getSkyline(buildings);
+        int[] nums = {8, 8, 7, 7, 7};
+        List<Integer> res = new LeetCode229MajorityElementII().majorityElement(nums);
         System.out.println(res);
 
 
