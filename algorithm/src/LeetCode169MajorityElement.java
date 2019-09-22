@@ -67,8 +67,28 @@ public class LeetCode169MajorityElement {
 //        quickSort(nums, right + 1, end);
 //    }
 
+    // // sort: 99%
+    // public int majorityElement(int[] nums) {
+    //     Arrays.sort(nums);
+    //     return nums[nums.length / 2];
+    // }
+
+	// moore voting: 99%
     public int majorityElement(int[] nums) {
-        Arrays.sort(nums);
-        return nums[nums.length / 2];
+    	int cnt = 0;
+    	int res = 0;
+
+    	for (int i = 0; i < nums.length; i++) {
+    		if (num == res) {
+    			cnt++;
+    		} else if (cnt == 0) {
+    			res = num;
+    			cnt = 1;
+    		} else {
+    			cnt--;
+    		}
+    	}
+
+		return res;
     }
 }
