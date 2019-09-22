@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -7,8 +5,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {8, 8, 7, 7, 7};
-        List<Integer> res = new LeetCode229MajorityElementII().majorityElement(nums);
+        LeetCode234PalindromeLinkedList.ListNode head = new LeetCode234PalindromeLinkedList.ListNode(1);
+        head.next = new LeetCode234PalindromeLinkedList.ListNode(2);
+        head.next.next = new LeetCode234PalindromeLinkedList.ListNode(2);
+        head.next.next.next = new LeetCode234PalindromeLinkedList.ListNode(1);
+        boolean res = new LeetCode234PalindromeLinkedList().isPalindrome(head);
         System.out.println(res);
 
 
