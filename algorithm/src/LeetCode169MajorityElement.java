@@ -17,8 +17,6 @@ Output: 2
 
  */
 
-import java.util.Arrays;
-
 public class LeetCode169MajorityElement {
 //    // 使用 HashMap 时间复杂度为 O(n^2) 34.86%
 //    public int majorityElement(int[] nums) {
@@ -78,7 +76,7 @@ public class LeetCode169MajorityElement {
     	int cnt = 0;
     	int res = 0;
 
-    	for (int i = 0; i < nums.length; i++) {
+    	for (int num : nums) {
     		if (num == res) {
     			cnt++;
     		} else if (cnt == 0) {
