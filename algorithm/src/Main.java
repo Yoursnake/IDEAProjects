@@ -5,11 +5,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        LeetCode234PalindromeLinkedList.ListNode head = new LeetCode234PalindromeLinkedList.ListNode(1);
-        head.next = new LeetCode234PalindromeLinkedList.ListNode(2);
-        head.next.next = new LeetCode234PalindromeLinkedList.ListNode(2);
-        head.next.next.next = new LeetCode234PalindromeLinkedList.ListNode(1);
-        boolean res = new LeetCode234PalindromeLinkedList().isPalindrome(head);
+        int n = 13;
+        int res = new LeetCode233NumberofDigitOne().countDigitOne(n);
         System.out.println(res);
 
 
