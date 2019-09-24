@@ -5,10 +5,18 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1,-1};
-        int k = 1;
+        int[][] matrix = {
+                {1, 4, 7, 11, 15},
+                {2, 5, 8, 12, 19},
+                {3, 6, 9, 16, 22},
+                {10, 13, 14, 17, 24},
+                {18, 21, 23, 26, 30}
+        };
 
-        int[] res = new LeetCode239SlidingWindowMaximum().maxSlidingWindow(nums, k);
+        int target = 20;
+
+        boolean res = new LeetCode240Searcha2DMatrixII().searchMatrix(matrix, target);
+        System.out.println(res);
 
     }
 
