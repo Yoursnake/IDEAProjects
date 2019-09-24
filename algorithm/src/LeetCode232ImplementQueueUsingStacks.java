@@ -83,11 +83,7 @@ public class LeetCode232ImplementQueueUsingStacks {
 	private Stack<Integer> tmp;
 
     /** Initialize your data structure here. */
-<<<<<<< HEAD
     public LeetCode232ImplementQueueUsingStacks() {
-=======
-    public MyQueue() {
->>>>>>> origin/master
         this.stack = new Stack<>();
         this.tmp = new Stack<>();
     }

@@ -47,26 +47,27 @@ public class LeetCode237DeleteNodeinaLinkedList {
 	}
 
 	// Queue: 100%
-	public void deleteNode(ListNode node) {
-		Queue<Integer> queue = new LinkedList<>();
+    public void deleteNode(ListNode node) {
+        Queue<Integer> queue = new LinkedList<>();
 
-		ListNode nullNode = new ListNode(-1);
-		nullNode.next = node;
+        ListNode nullNode = new ListNode(-1);
+        nullNode.next = node;
 
-		ListNode pre = nullNode;
-		ListNode curr = node;
+        ListNode pre = nullNode;
+        ListNode curr = node;
 
-		while (true) {
-			queue.offer(curr.val);
-			curr = curr.next;
-			if (curr == null) break;
-			pre = pre.next;
-		}
+        while (true) {
+            curr = curr.next;
+            if (curr == null) break;
+            queue.offer(curr.val);
+            pre = pre.next;
+        }
 
-		pre.next = null;
+        pre.next = null;
 
-		while (queue != null) {
-			node.val = queue.offer();
-		}
-	}
+        while (!queue.isEmpty()) {
+            node.val = queue.poll();
+            node = node.next;
+        }
+    }
 }
