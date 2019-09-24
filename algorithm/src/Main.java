@@ -5,15 +5,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        int n = 13;
-        int res = new LeetCode233NumberofDigitOne().countDigitOne(n);
-        System.out.println(res);
+        int[] nums = {1,-1};
+        int k = 1;
 
+        int[] res = new LeetCode239SlidingWindowMaximum().maxSlidingWindow(nums, k);
 
-//        Integer[] arr = {5, 2, 4, 1, 2, 5, 6, 2, 10};
-//        MaxHeap<Integer> maxHeap = new MaxHeap<>(arr);
-//        System.out.println(maxHeap.findMax());
-//        maxHeap.printHeap();
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
