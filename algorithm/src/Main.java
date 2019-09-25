@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -5,17 +7,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[][] matrix = {
-                {1, 4, 7, 11, 15},
-                {2, 5, 8, 12, 19},
-                {3, 6, 9, 16, 22},
-                {10, 13, 14, 17, 24},
-                {18, 21, 23, 26, 30}
-        };
+        String input = "2*3-4*5";
 
-        int target = 20;
-
-        boolean res = new LeetCode240Searcha2DMatrixII().searchMatrix(matrix, target);
+        List<Integer> res = new LeetCode241DifferentWaystoAddParentheses().diffWaysToCompute(input);
         System.out.println(res);
 
     }
