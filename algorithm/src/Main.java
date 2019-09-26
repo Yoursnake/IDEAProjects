@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -7,9 +5,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        String input = "2*3-4*5";
+        int n = 10;
 
-        List<Integer> res = new LeetCode241DifferentWaystoAddParentheses().diffWaysToCompute(input);
+        int res = new LeetCode264UglyNumberII().nthUglyNumber(n);
         System.out.println(res);
 
     }
