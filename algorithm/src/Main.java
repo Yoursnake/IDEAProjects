@@ -5,9 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int n = 10;
+        int num = 12345;
 
-        int res = new LeetCode264UglyNumberII().nthUglyNumber(n);
+	    String res = new LeetCode273IntegertoEnglishWords().numberToWords(num);
         System.out.println(res);
 
     }
