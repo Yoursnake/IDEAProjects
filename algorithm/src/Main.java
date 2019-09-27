@@ -5,9 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int num = 12345;
+        int n = 12;
 
-	    String res = new LeetCode273IntegertoEnglishWords().numberToWords(num);
+	    int res = new LeetCode279PerfectSquares().numSquares(n);
         System.out.println(res);
 
     }
