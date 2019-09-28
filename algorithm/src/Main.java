@@ -5,9 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int n = 12;
+	    int n = 5;
 
-	    int res = new LeetCode279PerfectSquares().numSquares(n);
+	    int res = new LeetCode278FirstBadVersion().firstBadVersion(n);
         System.out.println(res);
 
     }
