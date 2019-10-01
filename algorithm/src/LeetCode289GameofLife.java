@@ -63,7 +63,7 @@ public class LeetCode289GameofLife {
 					if (count < 2 || count > 3) tmp2[j] = 0;
 					else tmp2[j] = 1;
 				} else {
-					if (count == 3) temp2[j] = 1;
+					if (count == 3) tmp2[j] = 1;
 					else tmp2[j] = 0;
 				}
 			}
