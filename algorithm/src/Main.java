@@ -2,17 +2,20 @@
  * Created by shengliyi on 2017/3/4.
  */
 
-import java.util.*;
-
 public class Main {
 
     public static void main(String[] args) {
-	    String num = "105";
-		int target = 5;
-
-	    List<String> res = new LeetCode282ExpressionAddOperators().addOperators(num, target);
-        System.out.println(res);
-
+	    LeetCode295FindMedianfromDataStream ds = new LeetCode295FindMedianfromDataStream();
+	    ds.addNum(1);
+	    System.out.println(ds.findMedian());
+		ds.addNum(2);
+        System.out.println(ds.findMedian());
+	    ds.addNum(3);
+	    System.out.println(ds.findMedian());
+//	    ds.addNum(-4);
+//	    System.out.println(ds.findMedian());
+//	    ds.addNum(-5);
+//	    System.out.println(ds.findMedian());
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
