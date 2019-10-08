@@ -5,17 +5,18 @@
 public class Main {
 
     public static void main(String[] args) {
-	    LeetCode295FindMedianfromDataStream ds = new LeetCode295FindMedianfromDataStream();
-	    ds.addNum(1);
-	    System.out.println(ds.findMedian());
-		ds.addNum(2);
-        System.out.println(ds.findMedian());
-	    ds.addNum(3);
-	    System.out.println(ds.findMedian());
-//	    ds.addNum(-4);
-//	    System.out.println(ds.findMedian());
-//	    ds.addNum(-5);
-//	    System.out.println(ds.findMedian());
+	    LeetCode297SerializeandDeserializeBinaryTree t = new LeetCode297SerializeandDeserializeBinaryTree();
+	    LeetCode297SerializeandDeserializeBinaryTree.TreeNode a = t.new TreeNode(1);
+	    a.left = t.new TreeNode(2);
+	    a.right = t.new TreeNode(3);
+	    a.right.left = t.new TreeNode(4);
+	    a.right.right = t.new TreeNode(5);
+
+		String s = t.serialize(a);
+	    System.out.println(s);
+
+	    LeetCode297SerializeandDeserializeBinaryTree.TreeNode x = t.deserialize(s);
+
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
