@@ -2,20 +2,15 @@
  * Created by shengliyi on 2017/3/4.
  */
 
+import java.util.*;
+
 public class Main {
 
     public static void main(String[] args) {
-	    LeetCode297SerializeandDeserializeBinaryTree t = new LeetCode297SerializeandDeserializeBinaryTree();
-	    LeetCode297SerializeandDeserializeBinaryTree.TreeNode a = t.new TreeNode(1);
-	    a.left = t.new TreeNode(2);
-	    a.right = t.new TreeNode(3);
-	    a.right.left = t.new TreeNode(4);
-	    a.right.right = t.new TreeNode(5);
+	    String s = ")d)))";
+	    List<String> res = new LeetCode301RemoveInvalidParentheses().removeInvalidParentheses(s);
 
-		String s = t.serialize(a);
-	    System.out.println(s);
-
-	    LeetCode297SerializeandDeserializeBinaryTree.TreeNode x = t.deserialize(s);
+	    System.out.println(res);
 
     }
 
