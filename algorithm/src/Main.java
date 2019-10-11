@@ -2,16 +2,14 @@
  * Created by shengliyi on 2017/3/4.
  */
 
-import java.util.*;
-
 public class Main {
 
     public static void main(String[] args) {
-	    String s = ")d)))";
-	    List<String> res = new LeetCode301RemoveInvalidParentheses().removeInvalidParentheses(s);
+	    int[] nums = {1, 2, 3};
+	    LeetCode303RangeSumQueryImmutable a = new LeetCode303RangeSumQueryImmutable(nums);
 
-	    System.out.println(res);
-
+	    a.sumRange(0, 1);
+	    a.sumRange(0, 1);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
