@@ -5,11 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-	    int[] nums = {1, 2, 3};
-	    LeetCode303RangeSumQueryImmutable a = new LeetCode303RangeSumQueryImmutable(nums);
-
-	    a.sumRange(0, 1);
-	    a.sumRange(0, 1);
+	    String num = "235813";
+	    boolean res = new LeetCode306AdditiveNumber().isAdditiveNumber(num);
+	    System.out.println(res);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
