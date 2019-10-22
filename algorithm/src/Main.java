@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -7,10 +5,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	    int n = 6;
-	    int[][] edges = {{3, 0}, {3, 1}, {3, 2}, {3, 4}, {5, 4}};
+	    int[] nums = {3, 1, 5, 8};
 
-	    List<Integer> res = new LeetCode310MinimumHeightTrees().findMinHeightTrees(n, edges);
+	    int res = new LeetCode312BurstBalloons().maxCoins(nums);
+
 	    System.out.println(res);
     }
 
