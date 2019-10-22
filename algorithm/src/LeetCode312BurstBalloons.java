@@ -81,7 +81,9 @@ public class LeetCode312BurstBalloons {
 //		return dp[1][n];
 //	}
 
-	// DP:19% 8ms
+	// DP:19% 8ms   dp[i][j] = max(dp[i][k-1] + nums[i-1]*nums[k]*nums[j+1] + dp[k+1][j]) i<=k<=j
+	// | i-1 | i | i+1 | ... | k-1 | k | k+1 | ... | j-1 | j | j+1 |     
+	// dp[i][j] 表示 i 到 j 的 maxCoins，表达式表示先打破 i 到 k-1 和 k+1 到 j，最后打破 k
 	public int maxCoins(int[] nums) {
 		int n = nums.length;
 		int[][] dp = new int[n][n];
