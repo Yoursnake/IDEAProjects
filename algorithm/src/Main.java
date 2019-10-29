@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -5,11 +7,18 @@
 public class Main {
 
     public static void main(String[] args) {
-	    int[] nums = {3, 1, 5, 8};
+	    int[] nums1 = {7, 6, 1, 9, 3, 2, 3, 1, 1};
+	    int[] nums2 = {4, 0, 9, 9, 0, 5, 5, 4, 7};
+	    int k = 9;
 
-	    int res = new LeetCode312BurstBalloons().maxCoins(nums);
+	    int[] res = new LeetCode321CreateMaximumNumber().maxNumber(nums1, nums2, k);
 
-	    System.out.println(res);
+	    System.out.println(Arrays.toString(res));
+
+//	    int[] nums = {4, 0, 9, 9, 0, 5, 5, 4, 7};
+//	    int k = 4;
+//	    int[] res = new LeetCode321CreateMaximumNumber().findMaxNumber(nums, k);
+
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
