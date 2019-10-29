@@ -61,7 +61,7 @@ public class LeetCode318MaximumProductofWordLengths {
 
         for (int i = 0; i < words.length; i++) {
             for (int j = i + 1; j < words.length; j++) {
-                if (maps[i] & maps[j] == 0)     // 两个 map 的与操作等于 0 表示两个字符串没有相同元素
+                if ((maps[i] & maps[j]) == 0)     // 两个 map 的与操作等于 0 表示两个字符串没有相同元素
                     max = Math.max(max, words[i].length() * words[j].length());
             }
         }
