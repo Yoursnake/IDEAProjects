@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -7,13 +5,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-	    int[] nums1 = {7, 6, 1, 9, 3, 2, 3, 1, 1};
-	    int[] nums2 = {4, 0, 9, 9, 0, 5, 5, 4, 7};
-	    int k = 9;
+//	    String preorder = "9,3,4,#,#,1,#,#,2,#,6,#,#";
+	    String preorder = "1,#,#,#,#";
 
-	    int[] res = new LeetCode321CreateMaximumNumber().maxNumber(nums1, nums2, k);
+	    boolean res = new LeetCode331VerifyPreorderSerializationofaBinaryTree().isValidSerialization(preorder);
 
-	    System.out.println(Arrays.toString(res));
+	    System.out.println(res);
 
 //	    int[] nums = {4, 0, 9, 9, 0, 5, 5, 4, 7};
 //	    int k = 4;
