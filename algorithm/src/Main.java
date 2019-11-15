@@ -5,10 +5,9 @@
 public class Main {
 
     public static void main(String[] args) {
-//	    String preorder = "9,3,4,#,#,1,#,#,2,#,6,#,#";
-	    String preorder = "1,#,#,#,#";
+	    int[][] matrix = {{1, 2}};
 
-	    boolean res = new LeetCode331VerifyPreorderSerializationofaBinaryTree().isValidSerialization(preorder);
+	    int res = new LeetCode329LongestIncreasingPathinaMatrix().longestIncreasingPath(matrix);
 
 	    System.out.println(res);
 
