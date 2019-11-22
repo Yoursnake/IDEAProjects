@@ -1,20 +1,53 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
 
 public class Main {
 
+	public static class NInteger implements NestedInteger {
+
+		private Integer val;
+		private List<NestedInteger> list;
+
+		public NInteger(Integer val, List<NestedInteger> list) {
+			this.val = val;
+			this.list = list;
+		}
+
+		@Override
+		public boolean isInteger() {
+			return this.val != null;
+		}
+
+		@Override
+		public Integer getInteger() {
+			if (isInteger()) return this.val;
+			else return null;
+		}
+
+		@Override
+		public List<NestedInteger> getList() {
+			if (!isInteger()) return this.list;
+			else return null;
+		}
+	}
+
     public static void main(String[] args) {
-	    int[][] matrix = {{1, 2}};
+	    List<NestedInteger> list = new ArrayList<>();
+	    List<NestedInteger> a = new ArrayList<>();
+	    list.add(new NInteger(null, a));
+	    list.add(new NInteger(2, null));
+	    List<NestedInteger> b = new ArrayList<>(Arrays.asList(new NInteger(1, null), new NInteger(1, null)));
+	    list.add(new NInteger(null, b));
 
-	    int res = new LeetCode329LongestIncreasingPathinaMatrix().longestIncreasingPath(matrix);
-
-	    System.out.println(res);
-
-//	    int[] nums = {4, 0, 9, 9, 0, 5, 5, 4, 7};
-//	    int k = 4;
-//	    int[] res = new LeetCode321CreateMaximumNumber().findMaxNumber(nums, k);
-
+	    LeetCode341FlattenNestedListIterator i = new LeetCode341FlattenNestedListIterator(list);
+	    while (i.hasNext()) {
+		    System.out.println(i.next());
+	    }
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
