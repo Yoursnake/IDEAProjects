@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -37,17 +35,11 @@ public class Main {
 	}
 
     public static void main(String[] args) {
-	    List<NestedInteger> list = new ArrayList<>();
-	    List<NestedInteger> a = new ArrayList<>();
-	    list.add(new NInteger(null, a));
-	    list.add(new NInteger(2, null));
-	    List<NestedInteger> b = new ArrayList<>(Arrays.asList(new NInteger(1, null), new NInteger(1, null)));
-	    list.add(new NInteger(null, b));
+	    int[] nums = {1, 1, 1, 2, 2, 3};
+	    int k = 2;
 
-	    LeetCode341FlattenNestedListIterator i = new LeetCode341FlattenNestedListIterator(list);
-	    while (i.hasNext()) {
-		    System.out.println(i.next());
-	    }
+	    List<Integer> res = new LeetCode347TopKFrequentElements().topKFrequent(nums, k);
+	    System.out.println(res);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
