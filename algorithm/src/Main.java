@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -36,11 +35,16 @@ public class Main {
 	}
 
     public static void main(String[] args) {
-	    int[] nums1 = {1, 2, 2, 1};
-	    int[] nums2 = {1, 1};
-
-	    int[] res = new LeetCode349IntersectionofTwoArrays().intersection(nums1, nums2);
-	    System.out.println(Arrays.toString(res));
+	    LeetCode355DesignTwitter twitter = new LeetCode355DesignTwitter();
+	    twitter.postTweet(1, 1);
+	    List<Integer> list = twitter.getNewsFeed(1);
+	    System.out.println(list);
+	    twitter.follow(2, 1);
+	    list = twitter.getNewsFeed(2);
+	    System.out.println(list);
+	    twitter.unfollow(2, 1);
+	    list = twitter.getNewsFeed(2);
+	    System.out.println(list);
     }
 
     public static void printLinkedList(LeetCode206ReverseLinkedList.ListNode node) {
