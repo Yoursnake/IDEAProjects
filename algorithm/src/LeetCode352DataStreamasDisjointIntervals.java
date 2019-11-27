@@ -93,8 +93,8 @@ public class LeetCode352DataStreamasDisjointIntervals {
     public void addNum(int val) {
     	if (tree.containsKey(val)) return;
 
-    	Ineger l = tree.lowerKey(val);
-    	Ineger h = tree.higherKey(val);
+    	Integer l = tree.lowerKey(val);
+    	Integer h = tree.higherKey(val);
 
     	if (l != null && h != null && tree.get(l)[1] == val - 1 && val + 1 == tree.get(h)[0]) {
     		tree.get(l)[1] = tree.get(h)[1];
