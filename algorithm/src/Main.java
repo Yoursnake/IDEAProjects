@@ -35,8 +35,9 @@ public class Main {
 	}
 
     public static void main(String[] args) {
-	    int[][] envelopes = {{5, 4}, {6, 4}, {6, 7}, {2, 3}};
-	    int res = new LeetCode354RussianDollEnvelopes().maxEnvelopes(envelopes);
+	    int[][] matrix = {{1, 0, 1}, {0, -2, 3}};
+	    int k = 2;
+	    int res = new LeetCode363MaxSumofRectangleNoLargerThanK().maxSumSubmatrix(matrix, k);
 	    System.out.println(res);
     }
 
