@@ -35,9 +35,7 @@ public class Main {
 	}
 
     public static void main(String[] args) {
-	    int[][] matrix = {{1, 0, 1}, {0, -2, 3}};
-	    int k = 2;
-	    int res = new LeetCode363MaxSumofRectangleNoLargerThanK().maxSumSubmatrix(matrix, k);
+	    boolean res = new LeetCode365WaterandJugProblem().canMeasureWater(6, 9, 1);
 	    System.out.println(res);
     }
 
