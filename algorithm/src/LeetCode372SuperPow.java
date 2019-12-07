@@ -13,6 +13,8 @@ Output: 1024
 */
 
 public class LeetCode372SuperPow {
+	int base = 1337;
+
 	// 6ms 39%  a * b % k = (a % k) * (b % k) % k
 	// 参考：https://leetcode.com/problems/super-pow/discuss/84472/C%2B%2B-Clean-and-Short-Solution
 	public int superPow(int a, int[] b) {
