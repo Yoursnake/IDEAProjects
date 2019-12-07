@@ -35,7 +35,10 @@ public class Main {
 	}
 
     public static void main(String[] args) {
-	    boolean res = new LeetCode365WaterandJugProblem().canMeasureWater(6, 9, 1);
+	    int[] nums = {2, 1, 3};
+	    int target = 35;
+
+	    int res = new LeetCode377CombinationSumIV().combinationSum4(nums, target);
 	    System.out.println(res);
     }
 
