@@ -15,4 +15,13 @@ public class Main {
 	    System.out.println(res);
     }
 
+    @Test
+	public void LeetCode381() {
+	    LeetCode381InsertDeleteGetRandomO1Duplicatesallowed obj = new LeetCode381InsertDeleteGetRandomO1Duplicatesallowed();
+	    boolean param1 = obj.insert(1);
+	    boolean param2 = obj.remove(1);
+	    boolean param3 = obj.insert(1);
+	    System.out.println(param1 + "\t" + param2 + "\t" + param3);
+    }
+
 }
