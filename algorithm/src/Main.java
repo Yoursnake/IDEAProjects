@@ -30,4 +30,15 @@ public class Main {
     	new LeetCode385MiniParser().deserialize(s);
     }
 
+    @Test
+	public void LeetCode388() {
+	    String input = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext";
+	    int res = new LeetCode388LongestAbsoluteFilePath().lengthLongestPath(input);
+	    System.out.println(res);
+    }
+
+	public static void main(String[] args) {
+
+	}
+
 }
