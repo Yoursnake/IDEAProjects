@@ -24,4 +24,10 @@ public class Main {
 	    System.out.println(param1 + "\t" + param2 + "\t" + param3);
     }
 
+    @Test
+	public void LeetCode385() {
+	    String s = "[0]";
+    	new LeetCode385MiniParser().deserialize(s);
+    }
+
 }
