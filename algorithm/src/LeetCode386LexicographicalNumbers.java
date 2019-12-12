@@ -7,6 +7,8 @@ Please optimize your algorithm to use less time and space.
 The input size may be as large as 5,000,000.
 */
 
+import java.util.*;
+
 public class LeetCode386LexicographicalNumbers {
 
 	// DFS: 2ms 86%
