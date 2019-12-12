@@ -40,8 +40,8 @@ public class LeetCode387FirstUniqueCharacterinaString {
 
 	// HashSet + LinkedHashMap: 28ms 59.35%		one-pass
 	public int firstUniqChar(String s) {
-		Map<Integer, Integer> map = new LinkedHashMap<>();
-		Set<Integer> set = new HashSet<>();
+		Map<Character, Integer> map = new LinkedHashMap<>();
+		Set<Character> set = new HashSet<>();
 
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
@@ -54,6 +54,6 @@ public class LeetCode387FirstUniqueCharacterinaString {
 			}
 		}
 
-		return map.size() == 0 ? -1 : map.iterator().next().getValue();
+		return map.size() == 0 ? -1 : map.entrySet().iterator().next().getValue();
 	}
 }
