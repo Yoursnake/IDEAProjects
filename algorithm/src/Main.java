@@ -37,6 +37,13 @@ public class Main {
 	    System.out.println(res);
     }
 
+    @Test
+    public void LeetCode390() {
+    	int n = 9;
+    	int res = new LeetCode390EliminationGame().lastRemaining(n);
+	    System.out.println(res);
+    }
+
 	public static void main(String[] args) {
 
 	}
