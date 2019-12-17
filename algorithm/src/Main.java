@@ -1,5 +1,9 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by shengliyi on 2017/3/4.
  */
@@ -45,7 +49,19 @@ public class Main {
     }
 
 	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(4);
+		int idx1 = Collections.binarySearch(list, 2);
+		int idx2 = Collections.binarySearch(list, 3);
 
+		System.out.println(idx1);
+		System.out.println(idx2);
+
+		Collections.sort(list, (o1, o2) -> (o2 - o1));
+		int idx3 = Collections.binarySearch(list, 1, Collections.reverseOrder());
+		System.out.println(idx3);
 	}
 
 }
