@@ -62,34 +62,58 @@ public class LeetCode133CloneGraph {
         }
     }
 
+    // public Node cloneGraph(Node node) {
+    //     if (node == null) return null;
+
+    //     HashMap<Integer, Node> finished = new HashMap<>();  // 表示某个值的点是否创建
+    //     Node curr = new Node();
+    //     curr.val = node.val;
+
+    //     finished.put(curr.val, curr);
+    //     DFS(curr, node.neighbors, finished);
+    //     return curr;
+    // }
+
+    // private void DFS(Node curr, List<Node> neighbors, HashMap<Integer, Node> finished) {
+    //     List<Node> newNeighbors = new ArrayList<>();
+    //     for (Node neighbor : neighbors) {
+    //         int val = neighbor.val;
+
+    //         // 如果点已经创建过就不重复创建，从 map 中直接拿
+    //         // 当所有元素创建完毕将不再递归
+    //         if (finished.containsKey(val)) {
+    //             newNeighbors.add(finished.get(val));
+    //         } else {
+    //             Node temp = new Node();
+    //             temp.val = val;
+    //             newNeighbors.add(temp);
+    //             finished.put(val, temp);    // 将创建的点加入 map
+    //             DFS(temp, neighbor.neighbors, finished);
+    //         }
+    //     }
+
+    //     curr.neighbors = newNeighbors;      // 将完成的你 neighbors 加入节点
+    // }
+
+    // DFS: 54ms 5.3%
     public Node cloneGraph(Node node) {
-        HashMap<Integer, Node> finished = new HashMap<>();  // 表示某个值的点是否创建
-        Node curr = new Node();
-        curr.val = node.val;
-
-        finished.put(curr.val, curr);
-        DFS(curr, node.neighbors, finished);
-        return curr;
+        if (node == null) return null;
+        Map<Integer, Node> map = new HashMap<>();
+        return dfs(node, map);
     }
-
-    private void DFS(Node curr, List<Node> neighbors, HashMap<Integer, Node> finished) {
-        List<Node> newNeighbors = new ArrayList<>();
-        for (Node neighbor : neighbors) {
-            int val = neighbor.val;
-
-            // 如果点已经创建过就不重复创建，从 map 中直接拿
-            // 当所有元素创建完毕将不再递归
-            if (finished.containsKey(val)) {
-                newNeighbors.add(finished.get(val));
-            } else {
-                Node temp = new Node();
-                temp.val = val;
-                newNeighbors.add(temp);
-                finished.put(val, temp);    // 将创建的点加入 map
-                DFS(temp, neighbor.neighbors, finished);
-            }
+    
+    private Node dfs(Node node, Map<Integer, Node> map) {
+        if (map.containsKey(node.val)) {
+            return map.get(node.val);
         }
-
-        curr.neighbors = newNeighbors;      // 将完成的你 neighbors 加入节点
+        
+        Node curr = new Node(node.val);
+        map.put(node.val, curr);
+        
+        for (Node neighbor : node.neighbors) {
+            curr.neighbors.add(dfs(neighbor, map));
+        }
+        
+        return curr;
     }
 }
