@@ -55,7 +55,7 @@ public class LeetCode230KthSmallestElementinaBST {
 		int leftNum = countAllNode(root.left);
 		if (leftNum + 1 == k) return root.val;
 		else if (leftNum + 1 < k) return kthSmallest(root.right, k - leftNum - 1);
-		else return kthSmallest(root.left, k - 1);
+		else return kthSmallest(root.left, k);
 	}
 
 	private int countAllNode(TreeNode root) {
