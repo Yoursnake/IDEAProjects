@@ -22,13 +22,15 @@ respectively. Return 24.
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+
 class Solution {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
     
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null) return 0;
@@ -44,3 +46,17 @@ class Solution {
         return left + right;
     }
 }
+
+public class LeetCode404SumofLeftLeaves {
+    public static void main(String[] args) {
+        TreeNode node = new TreeNode(3);
+        node.left = new TreeNode(9);
+        node.right = new TreeNode(20);
+        node.right.left = new TreeNode(15);
+        node.right.right = new TreeNode(7);
+
+        int res = new Solution().sumOfLeftLeaves(node);
+        System.out.println(res);
+    }
+}
+
