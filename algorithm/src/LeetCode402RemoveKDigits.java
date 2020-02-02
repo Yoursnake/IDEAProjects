@@ -21,6 +21,8 @@ Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
 */
 
+import java.util.Stack;
+
 class LeetCode402RemoveKDigits {
     // Stack: 6ms 70%
     public String removeKdigits(String num, int k) {
